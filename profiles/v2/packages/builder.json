@@ -116,9 +116,9 @@
       },
       "1646709880066": {
         "id": "1646709880066",
-        "progress": 0.175,
-        "state": "processing",
-        "message": "Build script",
+        "progress": 1,
+        "state": "success",
+        "message": "2022. 3. 8. 12:24 Build success in 14116 ms!",
         "options": {
           "name": "slot_deco",
           "platform": "web-desktop",
