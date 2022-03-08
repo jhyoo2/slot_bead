@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 4900393.032916993,
+    "mTimestamp": 6004132.116750002,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -8905,7 +8905,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "mTimestamp": 1646705676178.8875,
+    "mTimestamp": 1646707312450.945,
     "chunkId": "assets/scripts/Scenes/BeadNode.js",
     "imports": [
       {
@@ -9124,7 +9124,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "mTimestamp": 1646705528378.7654,
+    "mTimestamp": 1646707303975.2988,
     "chunkId": "assets/scripts/Scenes/PinballScene.js",
     "imports": [
       {

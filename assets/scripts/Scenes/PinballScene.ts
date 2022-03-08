@@ -120,7 +120,14 @@ export class PinballScene extends BaseScene {
 
   rollButtonClicked() {
     console.log("roll", this.myForce);
-    if (this.myForce == 0) {
+    let gameStart = true;
+    for (var i in this.beadArray) {
+      if (this.beadArray[i].getComponent(BeadNode).beadStart) {
+        gameStart = false;
+      }
+    }
+
+    if (gameStart) {
       this.coinNum = 0;
       this.roolStart = true;
       this.myTime = new Date();
@@ -137,7 +144,7 @@ export class PinballScene extends BaseScene {
         new Vec3(0, -620, 0),
         new Vec3(162, -720, 0),
       ];
-      for (var i = 0; i < 3; i++) {
+      for (let i = 0; i < 3; i++) {
         const beadNode = instantiate(this.beadPrefab);
         this.nodeLayer.addChild(beadNode);
         beadNode.setPosition(vecArray[i]);

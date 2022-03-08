@@ -48,7 +48,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         constructor(...args) {
           super(...args);
 
-          _defineProperty(this, "beadStart", true);
+          _defineProperty(this, "beadStart", false);
 
           _defineProperty(this, "myForce", 0);
 
@@ -87,6 +87,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         addRandomForce() {
+          this.beadStart = true;
           const bidRigid = this.node.getComponent(RigidBody2D);
           const myForce = new Vec2(-40000 + 80000 * Math.random(), 90000 + 30000 * Math.random());
           bidRigid.applyForce(myForce, new Vec2(myForce.x / 100, myForce.y / 100), true);

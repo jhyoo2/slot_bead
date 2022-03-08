@@ -71,7 +71,7 @@
         "id": "1646705920512",
         "progress": 0.175,
         "state": "processing",
-        "message": "Build script",
+        "message": " start",
         "options": {
           "name": "slot_deco",
           "platform": "web-desktop",
@@ -111,7 +111,7 @@
             }
           }
         },
-        "time": "2022. 3. 8. 11:23",
+        "time": "2022. 3. 8. 11:42",
         "dirty": false
       }
     }

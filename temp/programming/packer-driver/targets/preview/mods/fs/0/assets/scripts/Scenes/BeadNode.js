@@ -62,7 +62,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _this = _ref.call.apply(_ref, [this].concat(args)) || this;
 
-          _defineProperty(_assertThisInitialized(_this), "beadStart", true);
+          _defineProperty(_assertThisInitialized(_this), "beadStart", false);
 
           _defineProperty(_assertThisInitialized(_this), "myForce", 0);
 
@@ -126,6 +126,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         };
 
         _proto.addRandomForce = function addRandomForce() {
+          this.beadStart = true;
           var bidRigid = this.node.getComponent(RigidBody2D);
           var myForce = new Vec2(-40000 + 80000 * Math.random(), 90000 + 30000 * Math.random());
           bidRigid.applyForce(myForce, new Vec2(myForce.x / 100, myForce.y / 100), true);

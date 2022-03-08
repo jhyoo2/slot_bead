@@ -166,8 +166,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         rollButtonClicked() {
           console.log("roll", this.myForce);
+          let gameStart = true;
 
-          if (this.myForce == 0) {
+          for (var i in this.beadArray) {
+            if (this.beadArray[i].getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+              error: Error()
+            }), BeadNode) : BeadNode).beadStart) {
+              gameStart = false;
+            }
+          }
+
+          if (gameStart) {
             this.coinNum = 0;
             this.roolStart = true;
             this.myTime = new Date();
@@ -183,7 +192,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
             const vecArray = [new Vec3(-162, -720, 0), new Vec3(0, -620, 0), new Vec3(162, -720, 0)];
 
-            for (var i = 0; i < 3; i++) {
+            for (let i = 0; i < 3; i++) {
               const beadNode = instantiate(this.beadPrefab);
               this.nodeLayer.addChild(beadNode);
               beadNode.setPosition(vecArray[i]);

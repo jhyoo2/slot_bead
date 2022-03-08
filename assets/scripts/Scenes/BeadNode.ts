@@ -27,7 +27,7 @@ import BaseRoom from "../Prefabs/Room/BaseRoom";
 
 @ccclass("BeadNode")
 export class BeadNode extends BaseScene {
-  beadStart = true;
+  beadStart = false;
   myForce = 0;
   myColor = 0;
 
@@ -69,6 +69,7 @@ export class BeadNode extends BaseScene {
   }
 
   addRandomForce() {
+    this.beadStart = true;
     const bidRigid = this.node.getComponent(RigidBody2D);
     const myForce = new Vec2(
       -40000 + 80000 * Math.random(),
