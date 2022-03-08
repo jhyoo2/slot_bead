@@ -1,7 +1,7 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "틀벽",
+    "name": "틀벽",
     "atlas": "",
     "rect": {
       "x": 1,

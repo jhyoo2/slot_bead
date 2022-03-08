@@ -71,7 +71,7 @@
         "id": "1646705920512",
         "progress": 1,
         "state": "success",
-        "message": "2022. 3. 8. 11:42 Build success in 13185 ms!",
+        "message": "2022. 3. 8. 13:33 Build success in 21515 ms!",
         "options": {
           "name": "slot_deco",
           "platform": "web-desktop",
@@ -94,7 +94,7 @@
               "inBundle": false
             }
           ],
-          "outputName": "Test1",
+          "outputName": "Test2",
           "packages": {
             "web-desktop": {
               "resolution": {
@@ -111,14 +111,14 @@
             }
           }
         },
-        "time": "2022. 3. 8. 11:42",
+        "time": "2022. 3. 8. 13:33",
         "dirty": false
       },
-      "1646709880066": {
-        "id": "1646709880066",
+      "1646718590228": {
+        "id": "1646718590228",
         "progress": 1,
         "state": "success",
-        "message": "2022. 3. 8. 12:24 Build success in 14116 ms!",
+        "message": "2022. 3. 8. 15:18 Build success in 15270 ms!",
         "options": {
           "name": "slot_deco",
           "platform": "web-desktop",
@@ -158,7 +158,7 @@
             }
           }
         },
-        "time": "2022. 3. 8. 12:24",
+        "time": "2022. 3. 8. 15:18",
         "dirty": false
       }
     }

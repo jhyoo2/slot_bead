@@ -116,7 +116,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _defineProperty(_assertThisInitialized(_this), "tileArray", []);
 
-          _defineProperty(_assertThisInitialized(_this), "superBet", 1);
+          _defineProperty(_assertThisInitialized(_this), "superBet", 5);
 
           return _this;
         }
@@ -143,10 +143,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     // const assetResult = await this.assetManager.loadAssets();
                     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
 
-                    this.makeTile();
-                    this.alocateMonster();
+                    this.makeTile(); // this.alocateMonster();
 
-                  case 5:
+                  case 4:
                   case "end":
                     return _context.stop();
                 }
@@ -289,8 +288,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (gameEnd && this.roolStart) {
             this.roolStart = false;
-            this.realStart = false;
-            this.moveMonster();
+            this.realStart = false; // this.moveMonster();
+
             console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
           }
 

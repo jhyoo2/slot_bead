@@ -63,7 +63,7 @@ export class PinballScene extends BaseScene {
   coinNum = 0;
   tileArray = [];
   // -520
-  superBet = 1;
+  superBet = 5;
 
   async onLoad() {
     super.onLoad();
@@ -82,7 +82,7 @@ export class PinballScene extends BaseScene {
 
     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
     this.makeTile();
-    this.alocateMonster();
+    // this.alocateMonster();
   }
   makeTile() {
     for (var i = 0; i < 12; i++) {
@@ -197,7 +197,7 @@ export class PinballScene extends BaseScene {
     if (gameEnd && this.roolStart) {
       this.roolStart = false;
       this.realStart = false;
-      this.moveMonster();
+      // this.moveMonster();
       console.log(
         "gold : " + this.coinNum,
         "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000

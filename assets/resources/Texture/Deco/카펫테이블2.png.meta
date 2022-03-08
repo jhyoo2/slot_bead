@@ -11,7 +11,7 @@
     "6c48a": {
       "importer": "texture",
       "uuid": "c0567d12-0d09-4e03-b28c-795f8095adde@6c48a",
-      "displayName": "카펫테이블2",
+      "displayName": "카펫테이블2",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -34,7 +34,7 @@
     "f9941": {
       "importer": "sprite-frame",
       "uuid": "c0567d12-0d09-4e03-b28c-795f8095adde@f9941",
-      "displayName": "카펫테이블2",
+      "displayName": "카펫테이블2",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
