@@ -141,7 +141,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         alocateMonster() {
           for (let i in this.monsterArray) {
             while (true) {
-              const row = Math.floor(Math.random() * 8) + 3;
+              const row = Math.floor(Math.random() * 6) + 5;
               const column = Math.floor(Math.random() * 8);
               const idx = row * 8 + column;
               const tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
@@ -190,7 +190,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            const vecArray = [new Vec3(-162, -720, 0), new Vec3(0, -620, 0), new Vec3(162, -720, 0)];
+            const vecArray = [new Vec3(-162, -520, 0), new Vec3(0, -420, 0), new Vec3(162, -520, 0)];
 
             for (let i = 0; i < 3; i++) {
               const beadNode = instantiate(this.beadPrefab);
@@ -200,6 +200,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
               }), BeadNode) : BeadNode).addRandomForce();
+              beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).myIdx = Number(i);
             }
           }
         }
@@ -237,23 +240,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.moveMonster();
               console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
             }
+          }
 
-            const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
+          const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
 
-            if (timeDiff >= 3) {
-              for (var i in this.beadArray) {
-                const myBead = this.beadArray[i];
-                myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                  error: Error()
-                }), BeadNode) : BeadNode).diminishVelocity(0.95);
-              }
-            } else if (timeDiff >= 2) {
-              for (var i in this.beadArray) {
-                const myBead = this.beadArray[i];
-                myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                  error: Error()
-                }), BeadNode) : BeadNode).diminishVelocity(0.975);
-              }
+          if (timeDiff >= 3) {
+            for (var i in this.beadArray) {
+              const myBead = this.beadArray[i];
+              myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).diminishVelocity(0.95 + 0.005 * Number(i));
+            }
+          } else if (timeDiff >= 2) {
+            for (var i in this.beadArray) {
+              const myBead = this.beadArray[i];
+              myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).diminishVelocity(0.975 + 0.005 * Number(i));
             }
           }
         }
@@ -296,7 +299,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               row += monsterScript.row;
 
-              if (row < 3 || row >= 11) {
+              if (row < 5 || row >= 11) {
                 continue;
               }
 

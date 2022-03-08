@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 10749.716666996479,
+    "mTimestamp": 11840.944375008345,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -335,7 +335,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 6004584.0808749795,
+    "mTimestamp": 612259.1867910028,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -1052,7 +1052,7 @@
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1646701308007,
+    "mTimestamp": 1646721420021,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
@@ -7540,7 +7540,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/BaseScene.ts": {
-    "mTimestamp": 1646651496008.242,
+    "mTimestamp": 1646713725668.806,
     "chunkId": "assets/scripts/BaseObject/BaseScene.js",
     "imports": [
       {
@@ -7601,7 +7601,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/ModalLayer.ts": {
-    "mTimestamp": 1646651496008.7861,
+    "mTimestamp": 1646713725669.0461,
     "chunkId": "assets/scripts/BaseObject/ModalLayer.js",
     "imports": [
       {
@@ -7636,7 +7636,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoAlert.ts": {
-    "mTimestamp": 1646651496011.6064,
+    "mTimestamp": 1646713725670.9285,
     "chunkId": "assets/scripts/Prefabs/Deco/DecoAlert.js",
     "imports": [
       {
@@ -7671,7 +7671,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoMaster.ts": {
-    "mTimestamp": 1646651496011.807,
+    "mTimestamp": 1646713725671.2607,
     "chunkId": "assets/scripts/Prefabs/Deco/DecoMaster.js",
     "imports": [
       {
@@ -7750,7 +7750,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/DataManager/AssetManager.ts": {
-    "mTimestamp": 1646651496010.2412,
+    "mTimestamp": 1646713725670.0664,
     "chunkId": "assets/scripts/DataManager/AssetManager.js",
     "imports": [
       {
@@ -7785,7 +7785,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Helloworld.ts": {
-    "mTimestamp": 1646651496010.7795,
+    "mTimestamp": 1646713725670.3435,
     "chunkId": "assets/scripts/Helloworld.js",
     "imports": [
       {
@@ -7820,7 +7820,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoTypes.ts": {
-    "mTimestamp": 1646651496018.575,
+    "mTimestamp": 1646713725671.5757,
     "chunkId": "assets/scripts/Prefabs/Deco/DecoTypes.js",
     "imports": [
       {
@@ -7855,7 +7855,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileList.ts": {
-    "mTimestamp": 1646651496012.716,
+    "mTimestamp": 1646713725671.8152,
     "chunkId": "assets/scripts/Prefabs/Deco/FileList.js",
     "imports": [
       {
@@ -7898,7 +7898,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ListView.ts": {
-    "mTimestamp": 1646651496014.1702,
+    "mTimestamp": 1646713725672.997,
     "chunkId": "assets/scripts/Prefabs/Deco/ListView.js",
     "imports": [
       {
@@ -7933,7 +7933,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ImageNode.ts": {
-    "mTimestamp": 1646651496013.817,
+    "mTimestamp": 1646713725672.6338,
     "chunkId": "assets/scripts/Prefabs/Deco/ImageNode.js",
     "imports": [
       {
@@ -7968,7 +7968,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileTitle.ts": {
-    "mTimestamp": 1646651496013.425,
+    "mTimestamp": 1646713725672.3865,
     "chunkId": "assets/scripts/Prefabs/Deco/FileTitle.js",
     "imports": [
       {
@@ -8029,7 +8029,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/VectorList.ts": {
-    "mTimestamp": 1646651496014.9998,
+    "mTimestamp": 1646713725673.2551,
     "chunkId": "assets/scripts/Prefabs/Deco/VectorList.js",
     "imports": [
       {
@@ -8064,7 +8064,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceIcon.ts": {
-    "mTimestamp": 1646651496016.1565,
+    "mTimestamp": 1646713725673.6663,
     "chunkId": "assets/scripts/Prefabs/Dice/DiceIcon.js",
     "imports": [
       {
@@ -8125,7 +8125,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileMaster.ts": {
-    "mTimestamp": 1646651496013.0774,
+    "mTimestamp": 1646713725672.1062,
     "chunkId": "assets/scripts/Prefabs/Deco/FileMaster.js",
     "imports": [
       {
@@ -8222,7 +8222,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/BaseRoom.ts": {
-    "mTimestamp": 1646651496018.8706,
+    "mTimestamp": 1646713725675.1619,
     "chunkId": "assets/scripts/Prefabs/Room/BaseRoom.js",
     "imports": [
       {
@@ -8283,7 +8283,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomBlock.ts": {
-    "mTimestamp": 1646651496019.4617,
+    "mTimestamp": 1646713725675.8125,
     "chunkId": "assets/scripts/Prefabs/Room/RoomBlock.js",
     "imports": [
       {
@@ -8362,7 +8362,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceManager.ts": {
-    "mTimestamp": 1646651496017.4355,
+    "mTimestamp": 1646713725674.329,
     "chunkId": "assets/scripts/Prefabs/DiceManager.js",
     "imports": [
       {
@@ -8423,7 +8423,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotIcon.ts": {
-    "mTimestamp": 1646651496020.5186,
+    "mTimestamp": 1646713725676.4731,
     "chunkId": "assets/scripts/Prefabs/Slot/SlotIcon.js",
     "imports": [
       {
@@ -8484,7 +8484,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceMaster.ts": {
-    "mTimestamp": 1646651496017.009,
+    "mTimestamp": 1646713725673.9277,
     "chunkId": "assets/scripts/Prefabs/Dice/DiceMaster.js",
     "imports": [
       {
@@ -8563,7 +8563,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomTemplate.ts": {
-    "mTimestamp": 1646651496019.8118,
+    "mTimestamp": 1646713725676.068,
     "chunkId": "assets/scripts/Prefabs/Room/RoomTemplate.js",
     "imports": [
       {
@@ -8624,7 +8624,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotLine.ts": {
-    "mTimestamp": 1646651496021.0525,
+    "mTimestamp": 1646713725676.7249,
     "chunkId": "assets/scripts/Prefabs/Slot/SlotLine.js",
     "imports": [
       {
@@ -8685,7 +8685,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/SlotManager.ts": {
-    "mTimestamp": 1646651496022.3286,
+    "mTimestamp": 1646713725677.1768,
     "chunkId": "assets/scripts/Prefabs/SlotManager.js",
     "imports": [
       {
@@ -8746,7 +8746,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "mTimestamp": 1646707312450.945,
+    "mTimestamp": 1646722029412.8984,
     "chunkId": "assets/scripts/Scenes/BeadNode.js",
     "imports": [
       {
@@ -8807,7 +8807,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts": {
-    "mTimestamp": 1646706208758.4075,
+    "mTimestamp": 1646713725678.534,
     "chunkId": "assets/scripts/Scenes/ObstacleNode.js",
     "imports": [
       {
@@ -8904,7 +8904,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotMaster.ts": {
-    "mTimestamp": 1646651496021.537,
+    "mTimestamp": 1646713725676.9563,
     "chunkId": "assets/scripts/Prefabs/Slot/SlotMaster.js",
     "imports": [
       {
@@ -8965,7 +8965,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "mTimestamp": 1646707303975.2988,
+    "mTimestamp": 1646721934876.4292,
     "chunkId": "assets/scripts/Scenes/PinballScene.js",
     "imports": [
       {
@@ -9080,7 +9080,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/Module.ts": {
-    "mTimestamp": 1646651496009.7112,
+    "mTimestamp": 1646713725669.682,
     "chunkId": "assets/scripts/Common/Module.js",
     "imports": [
       {
@@ -9115,7 +9115,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/CCUtils.ts": {
-    "mTimestamp": 1646651496009.3186,
+    "mTimestamp": 1646713725669.4395,
     "chunkId": "assets/scripts/Common/CCUtils.js",
     "imports": [
       {
@@ -9150,7 +9150,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceScene/TileRail.ts": {
-    "mTimestamp": 1646651496018.1543,
+    "mTimestamp": 1646713725674.7522,
     "chunkId": "assets/scripts/Prefabs/DiceScene/TileRail.js",
     "imports": [
       {
@@ -9185,7 +9185,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts": {
-    "mTimestamp": 1646703712256.044,
+    "mTimestamp": 1646713725679.1167,
     "chunkId": "assets/scripts/Scenes/TileNode.js",
     "imports": [
       {
