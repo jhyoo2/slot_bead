@@ -5,7 +5,7 @@
   },
   "common": {
     "startScene": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
-    "outputName": "Test1",
+    "outputName": "Test3",
     "mainBundleCompressionType": "merge_dep",
     "platform": "web-desktop",
     "debug": false,
@@ -69,9 +69,9 @@
       },
       "1646705920512": {
         "id": "1646705920512",
-        "progress": 0.175,
-        "state": "processing",
-        "message": " start",
+        "progress": 1,
+        "state": "success",
+        "message": "2022. 3. 8. 11:42 Build success in 13185 ms!",
         "options": {
           "name": "slot_deco",
           "platform": "web-desktop",
@@ -112,6 +112,53 @@
           }
         },
         "time": "2022. 3. 8. 11:42",
+        "dirty": false
+      },
+      "1646709880066": {
+        "id": "1646709880066",
+        "progress": 0.175,
+        "state": "processing",
+        "message": "Build script",
+        "options": {
+          "name": "slot_deco",
+          "platform": "web-desktop",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+          "scenes": [
+            {
+              "url": "db://assets/scenes/MainScene.scene",
+              "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+              "inBundle": false
+            }
+          ],
+          "outputName": "Test3",
+          "packages": {
+            "web-desktop": {
+              "resolution": {
+                "designWidth": 375,
+                "designHeight": 667
+              },
+              "polyfills": {
+                "asyncFunctions": true
+              }
+            },
+            "cocos-service": {
+              "configID": "8f87e1",
+              "services": []
+            }
+          }
+        },
+        "time": "2022. 3. 8. 12:24",
         "dirty": false
       }
     }

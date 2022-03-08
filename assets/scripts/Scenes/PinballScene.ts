@@ -20,6 +20,7 @@ import {
   Size,
   UIOpacity,
   ObjectCurve,
+  Label,
 } from "cc";
 const { ccclass, property } = _decorator;
 
@@ -52,6 +53,9 @@ export class PinballScene extends BaseScene {
   @property(Node)
   monsterArray: Node[] = [];
 
+  @property(Node)
+  superBetButton: Node | null = null;
+
   myForce = 0;
   myTime: Date = new Date();
   roolStart = false;
@@ -59,6 +63,7 @@ export class PinballScene extends BaseScene {
   coinNum = 0;
   tileArray = [];
   // -520
+  superBet = 1;
 
   async onLoad() {
     super.onLoad();
@@ -101,7 +106,7 @@ export class PinballScene extends BaseScene {
   alocateMonster() {
     for (let i in this.monsterArray) {
       while (true) {
-        const row = Math.floor(Math.random() * 8) + 3;
+        const row = Math.floor(Math.random() * 5) + 3;
         const column = Math.floor(Math.random() * 8);
         const idx = row * 8 + column;
         const tileScript = this.tileArray[idx].getComponent(TileNode);
@@ -139,17 +144,15 @@ export class PinballScene extends BaseScene {
           this.beadArray.splice(0, 1);
         }
       }
-      const vecArray = [
-        new Vec3(-162, -720, 0),
-        new Vec3(0, -620, 0),
-        new Vec3(162, -720, 0),
-      ];
-      for (let i = 0; i < 3; i++) {
+      const myScale = 0.45 * Math.pow(0.95, this.superBet - 1);
+      for (let i = 0; i < this.superBet; i++) {
         const beadNode = instantiate(this.beadPrefab);
         this.nodeLayer.addChild(beadNode);
-        beadNode.setPosition(vecArray[i]);
+        beadNode.setScale(new Vec3(myScale, myScale, myScale));
+        beadNode.setPosition(new Vec3(-162 + Math.random() * 324, -620, 0));
         this.beadArray.push(beadNode);
         beadNode.getComponent(BeadNode).addRandomForce();
+        beadNode.getComponent(BeadNode).activateBead();
       }
     }
   }
@@ -181,28 +184,35 @@ export class PinballScene extends BaseScene {
     this.myForce = totalForce;
     if (this.roolStart && totalForce > 0 && !this.realStart) {
       this.realStart = true;
+      this.myTime = new Date();
     }
-    if (this.realStart) {
-      if (totalForce == 0) {
-        this.roolStart = false;
-        this.realStart = false;
-        this.moveMonster();
-        console.log(
-          "gold : " + this.coinNum,
-          "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000
-        );
+
+    let gameEnd = true;
+    for (var i in this.beadArray) {
+      if (this.beadArray[i].getComponent(BeadNode).beadStart) {
+        gameEnd = false;
       }
-      const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
-      if (timeDiff >= 3) {
-        for (var i in this.beadArray) {
-          const myBead = this.beadArray[i];
-          myBead.getComponent(BeadNode).diminishVelocity(0.95);
-        }
-      } else if (timeDiff >= 2) {
-        for (var i in this.beadArray) {
-          const myBead = this.beadArray[i];
-          myBead.getComponent(BeadNode).diminishVelocity(0.975);
-        }
+    }
+
+    if (gameEnd && this.roolStart) {
+      this.roolStart = false;
+      this.realStart = false;
+      this.moveMonster();
+      console.log(
+        "gold : " + this.coinNum,
+        "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000
+      );
+    }
+    const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
+    if (timeDiff >= 3) {
+      for (var i in this.beadArray) {
+        const myBead = this.beadArray[i];
+        myBead.getComponent(BeadNode).diminishVelocity(0.95);
+      }
+    } else if (timeDiff >= 2) {
+      for (var i in this.beadArray) {
+        const myBead = this.beadArray[i];
+        myBead.getComponent(BeadNode).diminishVelocity(0.975);
       }
     }
   }
@@ -236,7 +246,7 @@ export class PinballScene extends BaseScene {
             break;
         }
         row += monsterScript.row;
-        if (row < 3 || row >= 11) {
+        if (row < 3 || row >= 8) {
           continue;
         }
         column += monsterScript.column;
@@ -262,5 +272,23 @@ export class PinballScene extends BaseScene {
         break;
       }
     }
+  }
+  superBetClicked() {
+    switch (this.superBet) {
+      case 1:
+        this.superBet = 3;
+        break;
+      case 3:
+        this.superBet = 5;
+        break;
+      case 5:
+        this.superBet = 10;
+        break;
+      case 10:
+        this.superBet = 1;
+        break;
+    }
+    this.superBetButton.getChildByName("Label").getComponent(Label).string =
+      String(this.superBet);
   }
 }

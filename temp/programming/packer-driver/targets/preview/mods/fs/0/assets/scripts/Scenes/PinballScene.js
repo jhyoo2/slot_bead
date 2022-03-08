@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context2) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, PinballScene;
+  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, Label, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, PinballScene;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -58,6 +58,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       UITransform = _cc.UITransform;
       Size = _cc.Size;
       UIOpacity = _cc.UIOpacity;
+      Label = _cc.Label;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -75,7 +76,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       ccclass = _decorator.ccclass;
       property = _decorator.property;
 
-      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Prefab), _dec6 = property(Node), _dec7 = property(Node), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
+      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Prefab), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
         _inheritsLoose(PinballScene, _ref);
 
         function PinballScene() {
@@ -101,6 +102,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(_assertThisInitialized(_this), "monsterArray", _descriptor6, _assertThisInitialized(_this));
 
+          _initializerDefineProperty(_assertThisInitialized(_this), "superBetButton", _descriptor7, _assertThisInitialized(_this));
+
           _defineProperty(_assertThisInitialized(_this), "myForce", 0);
 
           _defineProperty(_assertThisInitialized(_this), "myTime", new Date());
@@ -113,15 +116,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _defineProperty(_assertThisInitialized(_this), "tileArray", []);
 
+          _defineProperty(_assertThisInitialized(_this), "superBet", 1);
+
           return _this;
         }
 
         var _proto = PinballScene.prototype;
 
-        // -520
-        _proto.onLoad =
-        /*#__PURE__*/
-        function () {
+        _proto.onLoad = /*#__PURE__*/function () {
           var _onLoad = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
             return regeneratorRuntime.wrap(function _callee$(_context) {
               while (1) {
@@ -181,7 +183,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         _proto.alocateMonster = function alocateMonster() {
           for (var i in this.monsterArray) {
             while (true) {
-              var row = Math.floor(Math.random() * 8) + 3;
+              var row = Math.floor(Math.random() * 5) + 3;
               var column = Math.floor(Math.random() * 8);
               var idx = row * 8 + column;
               var tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
@@ -230,16 +232,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            var vecArray = [new Vec3(-162, -720, 0), new Vec3(0, -620, 0), new Vec3(162, -720, 0)];
+            var myScale = 0.45 * Math.pow(0.95, this.superBet - 1);
 
-            for (var _i = 0; _i < 3; _i++) {
+            for (var _i = 0; _i < this.superBet; _i++) {
               var beadNode = instantiate(this.beadPrefab);
               this.nodeLayer.addChild(beadNode);
-              beadNode.setPosition(vecArray[_i]);
+              beadNode.setScale(new Vec3(myScale, myScale, myScale));
+              beadNode.setPosition(new Vec3(-162 + Math.random() * 324, -620, 0));
               this.beadArray.push(beadNode);
               beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
               }), BeadNode) : BeadNode).addRandomForce();
+              beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).activateBead();
             }
           }
         };
@@ -268,34 +274,43 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (this.roolStart && totalForce > 0 && !this.realStart) {
             this.realStart = true;
+            this.myTime = new Date();
           }
 
-          if (this.realStart) {
-            if (totalForce == 0) {
-              this.roolStart = false;
-              this.realStart = false;
-              this.moveMonster();
-              console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
+          var gameEnd = true;
+
+          for (var i in this.beadArray) {
+            if (this.beadArray[i].getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+              error: Error()
+            }), BeadNode) : BeadNode).beadStart) {
+              gameEnd = false;
             }
+          }
 
-            var timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
+          if (gameEnd && this.roolStart) {
+            this.roolStart = false;
+            this.realStart = false;
+            this.moveMonster();
+            console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
+          }
 
-            if (timeDiff >= 3) {
-              for (var i in this.beadArray) {
-                var _myBead = this.beadArray[i];
+          var timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
 
-                _myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                  error: Error()
-                }), BeadNode) : BeadNode).diminishVelocity(0.95);
-              }
-            } else if (timeDiff >= 2) {
-              for (var i in this.beadArray) {
-                var _myBead2 = this.beadArray[i];
+          if (timeDiff >= 3) {
+            for (var i in this.beadArray) {
+              var _myBead = this.beadArray[i];
 
-                _myBead2.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                  error: Error()
-                }), BeadNode) : BeadNode).diminishVelocity(0.975);
-              }
+              _myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).diminishVelocity(0.95);
+            }
+          } else if (timeDiff >= 2) {
+            for (var i in this.beadArray) {
+              var _myBead2 = this.beadArray[i];
+
+              _myBead2.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).diminishVelocity(0.975);
             }
           }
         };
@@ -338,7 +353,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               row += monsterScript.row;
 
-              if (row < 3 || row >= 11) {
+              if (row < 3 || row >= 8) {
                 continue;
               }
 
@@ -371,6 +386,28 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               break;
             }
           }
+        };
+
+        _proto.superBetClicked = function superBetClicked() {
+          switch (this.superBet) {
+            case 1:
+              this.superBet = 3;
+              break;
+
+            case 3:
+              this.superBet = 5;
+              break;
+
+            case 5:
+              this.superBet = 10;
+              break;
+
+            case 10:
+              this.superBet = 1;
+              break;
+          }
+
+          this.superBetButton.getChildByName("Label").getComponent(Label).string = String(this.superBet);
         };
 
         return PinballScene;
@@ -417,6 +454,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         writable: true,
         initializer: function initializer() {
           return [];
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "superBetButton", [_dec8], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
         }
       })), _class2)) || _class));
 

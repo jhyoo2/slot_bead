@@ -27,6 +27,7 @@ import BaseRoom from "../Prefabs/Room/BaseRoom";
 
 @ccclass("BeadNode")
 export class BeadNode extends BaseScene {
+  @property(Boolean)
   beadStart = false;
   myForce = 0;
   myColor = 0;
@@ -48,6 +49,9 @@ export class BeadNode extends BaseScene {
     if (collider) {
       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
     }
+  }
+  activateBead() {
+    this.coverNode.active = true;
   }
 
   onBeginContact(
@@ -72,7 +76,7 @@ export class BeadNode extends BaseScene {
     this.beadStart = true;
     const bidRigid = this.node.getComponent(RigidBody2D);
     const myForce = new Vec2(
-      -40000 + 80000 * Math.random(),
+      -20000 + 40000 * Math.random(),
       90000 + 30000 * Math.random()
     );
     bidRigid.applyForce(
@@ -117,7 +121,7 @@ export class BeadNode extends BaseScene {
       if (myForce <= 0.1) {
         bidRigid.linearVelocity = new Vec2(0, 0);
         bidRigid.angularVelocity = 0;
-        this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
+        // this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
         this.beadStart = false;
       } else if (myForce > 10) {
         bidRigid.linearVelocity = new Vec2(
@@ -133,8 +137,8 @@ export class BeadNode extends BaseScene {
         bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
       }
       if (myForce <= 3) {
-        this.coverNode.getComponent(UIOpacityComponent).opacity =
-          (myForce / 3) * 255;
+        // this.coverNode.getComponent(UIOpacityComponent).opacity =
+        //   (myForce / 3) * 255;
       }
     }
     // console.log(myForce);
