@@ -68,6 +68,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _defineProperty(_assertThisInitialized(_this), "myColor", 0);
 
+          _defineProperty(_assertThisInitialized(_this), "myIdx", 0);
+
           _initializerDefineProperty(_assertThisInitialized(_this), "coverNode", _descriptor, _assertThisInitialized(_this));
 
           _initializerDefineProperty(_assertThisInitialized(_this), "beadFrame", _descriptor2, _assertThisInitialized(_this));
@@ -75,6 +77,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           _defineProperty(_assertThisInitialized(_this), "maxForce", 0);
 
           _defineProperty(_assertThisInitialized(_this), "maxVelocity", new Vec2(0, 0));
+
+          _defineProperty(_assertThisInitialized(_this), "startTime", new Date());
 
           return _this;
         }
@@ -90,6 +94,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                   case 0:
                     _ref.prototype.onLoad.call(this);
 
+                    this.coverNode.active = true;
                     myColor = Math.floor(Math.random() * 5) + 1;
                     this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
                     collider = this.getComponent(Collider2D);
@@ -98,7 +103,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
                     }
 
-                  case 5:
+                  case 6:
                   case "end":
                     return _context.stop();
                 }
@@ -114,11 +119,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }();
 
         _proto.onBeginContact = function onBeginContact(selfCollider, otherCollider, contact) {
-          if (this.beadStart) {
-            var myColor = Math.floor(Math.random() * 5) + 1;
-            this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
-          }
-
+          // if (this.beadStart) {
+          //   const myColor = Math.floor(Math.random() * 5) + 1;
+          //   this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+          // }
           if (otherCollider.node.getComponent(BeadNode)) {
             var myRigid = this.node.getComponent(RigidBody2D);
             myRigid.linearVelocity = new Vec2(Math.max(this.maxVelocity.x, myRigid.linearVelocity.x * 2.2), Math.max(this.maxVelocity.y, myRigid.linearVelocity.y * 2.2));
@@ -127,6 +131,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
         _proto.addRandomForce = function addRandomForce() {
           this.beadStart = true;
+          this.startTime = new Date();
           var bidRigid = this.node.getComponent(RigidBody2D);
           var myForce = new Vec2(-40000 + 80000 * Math.random(), 90000 + 30000 * Math.random());
           bidRigid.applyForce(myForce, new Vec2(myForce.x / 100, myForce.y / 100), true);
@@ -144,6 +149,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }
 
           var bidRigid = this.node.getComponent(RigidBody2D);
+
+          if (this.myIdx < 2) {
+            var time = (new Date().getTime() - this.startTime.getTime()) / 1000;
+
+            if (time >= this.myIdx + 1) {
+              this.coverNode.active = false;
+            }
+          }
+
           var myForce = Math.sqrt(Math.pow(bidRigid.linearVelocity.x, 2) + Math.pow(bidRigid.linearVelocity.y, 2));
 
           if (this.maxForce < myForce) {
@@ -169,7 +183,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
             }
 
-            if (myForce <= 3) {
+            if (myForce <= 3 && this.myIdx == 2) {
               this.coverNode.getComponent(UIOpacityComponent).opacity = myForce / 3 * 255;
             }
           } // console.log(myForce);

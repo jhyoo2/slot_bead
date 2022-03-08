@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, Label, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _temp, _crd, ccclass, property, PinballScene;
+  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, PinballScene;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -48,7 +48,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       UITransform = _cc.UITransform;
       Size = _cc.Size;
       UIOpacity = _cc.UIOpacity;
-      Label = _cc.Label;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -68,7 +67,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         property
       } = _decorator);
 
-      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Prefab), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec(_class = (_class2 = (_temp = class PinballScene extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
+      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Prefab), _dec6 = property(Node), _dec7 = property(Node), _dec(_class = (_class2 = (_temp = class PinballScene extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
         error: Error()
       }), BaseScene) : BaseScene) {
         constructor(...args) {
@@ -88,8 +87,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _initializerDefineProperty(this, "monsterArray", _descriptor6, this);
 
-          _initializerDefineProperty(this, "superBetButton", _descriptor7, this);
-
           _defineProperty(this, "myForce", 0);
 
           _defineProperty(this, "myTime", new Date());
@@ -101,10 +98,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           _defineProperty(this, "coinNum", 0);
 
           _defineProperty(this, "tileArray", []);
-
-          _defineProperty(this, "superBet", 1);
         }
 
+        // -520
         async onLoad() {
           super.onLoad();
           PhysicsSystem2D.instance.enable = true;
@@ -145,7 +141,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         alocateMonster() {
           for (let i in this.monsterArray) {
             while (true) {
-              const row = Math.floor(Math.random() * 5) + 3;
+              const row = Math.floor(Math.random() * 6) + 5;
               const column = Math.floor(Math.random() * 8);
               const idx = row * 8 + column;
               const tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
@@ -194,20 +190,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            const myScale = 0.45 * Math.pow(0.95, this.superBet - 1);
+            const vecArray = [new Vec3(-162, -520, 0), new Vec3(0, -420, 0), new Vec3(162, -520, 0)];
 
-            for (let i = 0; i < this.superBet; i++) {
+            for (let i = 0; i < 3; i++) {
               const beadNode = instantiate(this.beadPrefab);
               this.nodeLayer.addChild(beadNode);
-              beadNode.setScale(new Vec3(myScale, myScale, myScale));
-              beadNode.setPosition(new Vec3(-162 + Math.random() * 324, -620, 0));
+              beadNode.setPosition(vecArray[i]);
               this.beadArray.push(beadNode);
               beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
               }), BeadNode) : BeadNode).addRandomForce();
               beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
-              }), BeadNode) : BeadNode).activateBead();
+              }), BeadNode) : BeadNode).myIdx = Number(i);
             }
           }
         }
@@ -236,41 +231,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           if (this.roolStart && totalForce > 0 && !this.realStart) {
             this.realStart = true;
-            this.myTime = new Date();
           }
 
-          let gameEnd = true;
-
-          for (var i in this.beadArray) {
-            if (this.beadArray[i].getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-              error: Error()
-            }), BeadNode) : BeadNode).beadStart) {
-              gameEnd = false;
+          if (this.realStart) {
+            if (totalForce == 0) {
+              this.roolStart = false;
+              this.realStart = false;
+              this.moveMonster();
+              console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
             }
-          }
 
-          if (gameEnd && this.roolStart) {
-            this.roolStart = false;
-            this.realStart = false;
-            this.moveMonster();
-            console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
-          }
+            const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
 
-          const timeDiff = (new Date().getTime() - this.myTime.getTime()) / 1000;
-
-          if (timeDiff >= 3) {
-            for (var i in this.beadArray) {
-              const myBead = this.beadArray[i];
-              myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                error: Error()
-              }), BeadNode) : BeadNode).diminishVelocity(0.95);
-            }
-          } else if (timeDiff >= 2) {
-            for (var i in this.beadArray) {
-              const myBead = this.beadArray[i];
-              myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
-                error: Error()
-              }), BeadNode) : BeadNode).diminishVelocity(0.975);
+            if (timeDiff >= 3) {
+              for (var i in this.beadArray) {
+                const myBead = this.beadArray[i];
+                myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                  error: Error()
+                }), BeadNode) : BeadNode).diminishVelocity(0.95);
+              }
+            } else if (timeDiff >= 2) {
+              for (var i in this.beadArray) {
+                const myBead = this.beadArray[i];
+                myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                  error: Error()
+                }), BeadNode) : BeadNode).diminishVelocity(0.975);
+              }
             }
           }
         }
@@ -313,7 +299,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               row += monsterScript.row;
 
-              if (row < 3 || row >= 8) {
+              if (row < 5 || row >= 11) {
                 continue;
               }
 
@@ -346,28 +332,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               break;
             }
           }
-        }
-
-        superBetClicked() {
-          switch (this.superBet) {
-            case 1:
-              this.superBet = 3;
-              break;
-
-            case 3:
-              this.superBet = 5;
-              break;
-
-            case 5:
-              this.superBet = 10;
-              break;
-
-            case 10:
-              this.superBet = 1;
-              break;
-          }
-
-          this.superBetButton.getChildByName("Label").getComponent(Label).string = String(this.superBet);
         }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "tileLayer", [_dec2], {
@@ -411,13 +375,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         writable: true,
         initializer: function () {
           return [];
-        }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "superBetButton", [_dec8], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return null;
         }
       })), _class2)) || _class));
 

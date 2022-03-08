@@ -101,7 +101,7 @@ export class PinballScene extends BaseScene {
   alocateMonster() {
     for (let i in this.monsterArray) {
       while (true) {
-        const row = Math.floor(Math.random() * 8) + 3;
+        const row = Math.floor(Math.random() * 6) + 5;
         const column = Math.floor(Math.random() * 8);
         const idx = row * 8 + column;
         const tileScript = this.tileArray[idx].getComponent(TileNode);
@@ -140,9 +140,9 @@ export class PinballScene extends BaseScene {
         }
       }
       const vecArray = [
-        new Vec3(-162, -720, 0),
-        new Vec3(0, -620, 0),
-        new Vec3(162, -720, 0),
+        new Vec3(-162, -520, 0),
+        new Vec3(0, -420, 0),
+        new Vec3(162, -520, 0),
       ];
       for (let i = 0; i < 3; i++) {
         const beadNode = instantiate(this.beadPrefab);
@@ -150,6 +150,7 @@ export class PinballScene extends BaseScene {
         beadNode.setPosition(vecArray[i]);
         this.beadArray.push(beadNode);
         beadNode.getComponent(BeadNode).addRandomForce();
+        beadNode.getComponent(BeadNode).myIdx = Number(i);
       }
     }
   }
@@ -236,7 +237,7 @@ export class PinballScene extends BaseScene {
             break;
         }
         row += monsterScript.row;
-        if (row < 3 || row >= 11) {
+        if (row < 5 || row >= 11) {
           continue;
         }
         column += monsterScript.column;

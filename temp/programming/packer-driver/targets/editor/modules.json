@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 9282.082124978304,
+    "mTimestamp": 8923.406124979258,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 19840.559207975864,
+    "mTimestamp": 195229.49687498808,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -1106,7 +1106,7 @@
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1646713731215,
+    "mTimestamp": 1646713780030,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
@@ -8905,7 +8905,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "mTimestamp": 1646713725678.2422,
+    "mTimestamp": 1646713973587.7449,
     "chunkId": "assets/scripts/Scenes/BeadNode.js",
     "imports": [
       {
@@ -9124,7 +9124,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "mTimestamp": 1646713725678.8545,
+    "mTimestamp": 1646713882138.3552,
     "chunkId": "assets/scripts/Scenes/PinballScene.js",
     "imports": [
       {
@@ -9138,11 +9138,11 @@
         "value": "cc",
         "loc": {
           "start": {
-            "line": 24,
+            "line": 23,
             "column": 7
           },
           "end": {
-            "line": 24,
+            "line": 23,
             "column": 11
           }
         }
@@ -9152,11 +9152,11 @@
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
-            "line": 27,
+            "line": 26,
             "column": 22
           },
           "end": {
-            "line": 27,
+            "line": 26,
             "column": 47
           }
         }
@@ -9166,11 +9166,11 @@
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
-            "line": 30,
+            "line": 29,
             "column": 25
           },
           "end": {
-            "line": 30,
+            "line": 29,
             "column": 37
           }
         }
@@ -9180,11 +9180,11 @@
         "rewritten": "__unresolved_3",
         "loc": {
           "start": {
-            "line": 31,
+            "line": 30,
             "column": 29
           },
           "end": {
-            "line": 31,
+            "line": 30,
             "column": 45
           }
         }
@@ -9194,11 +9194,11 @@
         "rewritten": "__unresolved_4",
         "loc": {
           "start": {
-            "line": 32,
+            "line": 31,
             "column": 25
           },
           "end": {
-            "line": 32,
+            "line": 31,
             "column": 37
           }
         }

@@ -181,7 +181,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         _proto.alocateMonster = function alocateMonster() {
           for (var i in this.monsterArray) {
             while (true) {
-              var row = Math.floor(Math.random() * 8) + 3;
+              var row = Math.floor(Math.random() * 6) + 5;
               var column = Math.floor(Math.random() * 8);
               var idx = row * 8 + column;
               var tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
@@ -230,7 +230,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            var vecArray = [new Vec3(-162, -720, 0), new Vec3(0, -620, 0), new Vec3(162, -720, 0)];
+            var vecArray = [new Vec3(-162, -520, 0), new Vec3(0, -420, 0), new Vec3(162, -520, 0)];
 
             for (var _i = 0; _i < 3; _i++) {
               var beadNode = instantiate(this.beadPrefab);
@@ -240,6 +240,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
               }), BeadNode) : BeadNode).addRandomForce();
+              beadNode.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+                error: Error()
+              }), BeadNode) : BeadNode).myIdx = Number(_i);
             }
           }
         };
@@ -338,7 +341,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               row += monsterScript.row;
 
-              if (row < 3 || row >= 11) {
+              if (row < 5 || row >= 11) {
                 continue;
               }
 

@@ -11,7 +11,7 @@
     "6c48a": {
       "importer": "texture",
       "uuid": "8d9f3f2f-81aa-4ae9-9658-f027480dba9e@6c48a",
-      "displayName": "오른족벽1",
+      "displayName": "오른족벽1",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -34,7 +34,7 @@
     "f9941": {
       "importer": "sprite-frame",
       "uuid": "8d9f3f2f-81aa-4ae9-9658-f027480dba9e@f9941",
-      "displayName": "오른족벽1",
+      "displayName": "오른족벽1",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {

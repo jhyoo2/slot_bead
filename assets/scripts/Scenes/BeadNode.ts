@@ -30,6 +30,7 @@ export class BeadNode extends BaseScene {
   beadStart = false;
   myForce = 0;
   myColor = 0;
+  myIdx = 0;
 
   @property(Node)
   coverNode: Node | null = null;
@@ -39,9 +40,11 @@ export class BeadNode extends BaseScene {
 
   maxForce = 0;
   maxVelocity = new Vec2(0, 0);
+  startTime = new Date();
 
   async onLoad() {
     super.onLoad();
+    this.coverNode.active = true;
     const myColor = Math.floor(Math.random() * 5) + 1;
     this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
     let collider = this.getComponent(Collider2D);
@@ -55,10 +58,10 @@ export class BeadNode extends BaseScene {
     otherCollider: Collider2D,
     contact: IPhysics2DContact | null
   ) {
-    if (this.beadStart) {
-      const myColor = Math.floor(Math.random() * 5) + 1;
-      this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
-    }
+    // if (this.beadStart) {
+    //   const myColor = Math.floor(Math.random() * 5) + 1;
+    //   this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+    // }
     if (otherCollider.node.getComponent(BeadNode)) {
       const myRigid = this.node.getComponent(RigidBody2D);
       myRigid.linearVelocity = new Vec2(
@@ -70,6 +73,7 @@ export class BeadNode extends BaseScene {
 
   addRandomForce() {
     this.beadStart = true;
+    this.startTime = new Date();
     const bidRigid = this.node.getComponent(RigidBody2D);
     const myForce = new Vec2(
       -40000 + 80000 * Math.random(),
@@ -99,6 +103,12 @@ export class BeadNode extends BaseScene {
       return;
     }
     const bidRigid = this.node.getComponent(RigidBody2D);
+    if (this.myIdx < 2) {
+      const time = (new Date().getTime() - this.startTime.getTime()) / 1000;
+      if (time >= this.myIdx + 1) {
+        this.coverNode.active = false;
+      }
+    }
 
     const myForce = Math.sqrt(
       Math.pow(bidRigid.linearVelocity.x, 2) +
@@ -132,7 +142,7 @@ export class BeadNode extends BaseScene {
       } else {
         bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
       }
-      if (myForce <= 3) {
+      if (myForce <= 3 && this.myIdx == 2) {
         this.coverNode.getComponent(UIOpacityComponent).opacity =
           (myForce / 3) * 255;
       }

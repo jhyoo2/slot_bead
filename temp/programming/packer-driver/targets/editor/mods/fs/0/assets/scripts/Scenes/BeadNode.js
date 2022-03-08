@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, Vec2, RigidBody2D, SpriteFrame, Sprite, Collider2D, Contact2DType, BaseScene, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _temp, _crd, ccclass, property, BeadNode;
+  var _reporterNs, _cclegacy, _decorator, Node, Vec2, RigidBody2D, SpriteFrame, Sprite, UIOpacityComponent, Collider2D, Contact2DType, BaseScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BeadNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -26,6 +26,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       RigidBody2D = _cc.RigidBody2D;
       SpriteFrame = _cc.SpriteFrame;
       Sprite = _cc.Sprite;
+      UIOpacityComponent = _cc.UIOpacityComponent;
       Collider2D = _cc.Collider2D;
       Contact2DType = _cc.Contact2DType;
     }, function (_unresolved_2) {
@@ -41,29 +42,34 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         property
       } = _decorator);
 
-      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Boolean), _dec3 = property(Node), _dec4 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = class BeadNode extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
+      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Node), _dec3 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = class BeadNode extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
         error: Error()
       }), BaseScene) : BaseScene) {
         constructor(...args) {
           super(...args);
 
-          _initializerDefineProperty(this, "beadStart", _descriptor, this);
+          _defineProperty(this, "beadStart", false);
 
           _defineProperty(this, "myForce", 0);
 
           _defineProperty(this, "myColor", 0);
 
-          _initializerDefineProperty(this, "coverNode", _descriptor2, this);
+          _defineProperty(this, "myIdx", 0);
 
-          _initializerDefineProperty(this, "beadFrame", _descriptor3, this);
+          _initializerDefineProperty(this, "coverNode", _descriptor, this);
+
+          _initializerDefineProperty(this, "beadFrame", _descriptor2, this);
 
           _defineProperty(this, "maxForce", 0);
 
           _defineProperty(this, "maxVelocity", new Vec2(0, 0));
+
+          _defineProperty(this, "startTime", new Date());
         }
 
         async onLoad() {
           super.onLoad();
+          this.coverNode.active = true;
           const myColor = Math.floor(Math.random() * 5) + 1;
           this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
           let collider = this.getComponent(Collider2D);
@@ -73,16 +79,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }
         }
 
-        activateBead() {
-          this.coverNode.active = true;
-        }
-
         onBeginContact(selfCollider, otherCollider, contact) {
-          if (this.beadStart) {
-            const myColor = Math.floor(Math.random() * 5) + 1;
-            this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
-          }
-
+          // if (this.beadStart) {
+          //   const myColor = Math.floor(Math.random() * 5) + 1;
+          //   this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+          // }
           if (otherCollider.node.getComponent(BeadNode)) {
             const myRigid = this.node.getComponent(RigidBody2D);
             myRigid.linearVelocity = new Vec2(Math.max(this.maxVelocity.x, myRigid.linearVelocity.x * 2.2), Math.max(this.maxVelocity.y, myRigid.linearVelocity.y * 2.2));
@@ -91,8 +92,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
         addRandomForce() {
           this.beadStart = true;
+          this.startTime = new Date();
           const bidRigid = this.node.getComponent(RigidBody2D);
-          const myForce = new Vec2(-20000 + 40000 * Math.random(), 90000 + 30000 * Math.random());
+          const myForce = new Vec2(-40000 + 80000 * Math.random(), 90000 + 30000 * Math.random());
           bidRigid.applyForce(myForce, new Vec2(myForce.x / 100, myForce.y / 100), true);
         }
 
@@ -108,6 +110,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           }
 
           const bidRigid = this.node.getComponent(RigidBody2D);
+
+          if (this.myIdx < 2) {
+            const time = (new Date().getTime() - this.startTime.getTime()) / 1000;
+
+            if (time >= this.myIdx + 1) {
+              this.coverNode.active = false;
+            }
+          }
+
           const myForce = Math.sqrt(Math.pow(bidRigid.linearVelocity.x, 2) + Math.pow(bidRigid.linearVelocity.y, 2));
 
           if (this.maxForce < myForce) {
@@ -122,8 +133,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
             if (myForce <= 0.1) {
               bidRigid.linearVelocity = new Vec2(0, 0);
-              bidRigid.angularVelocity = 0; // this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
-
+              bidRigid.angularVelocity = 0;
+              this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
               this.beadStart = false;
             } else if (myForce > 10) {
               bidRigid.linearVelocity = new Vec2(preVelo.x * 0.9975, preVelo.y * 0.9975);
@@ -133,28 +144,21 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
             }
 
-            if (myForce <= 3) {// this.coverNode.getComponent(UIOpacityComponent).opacity =
-              //   (myForce / 3) * 255;
+            if (myForce <= 3 && this.myIdx == 2) {
+              this.coverNode.getComponent(UIOpacityComponent).opacity = myForce / 3 * 255;
             }
           } // console.log(myForce);
 
         }
 
-      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "beadStart", [_dec2], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function () {
-          return false;
-        }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "coverNode", [_dec3], {
+      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "coverNode", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function () {
           return null;
         }
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "beadFrame", [_dec4], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "beadFrame", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,

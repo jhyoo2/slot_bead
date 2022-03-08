@@ -6672,337 +6672,337 @@
     "time": 1637721102000
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources": {
-    "time": 1646651461698.9756,
+    "time": 1646713725585.9268,
     "uuid": "358b14a4-20d7-4bf0-af01-32d6d82d05ec",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes": {
-    "time": 1646651461701.7317,
+    "time": 1646713752909.946,
     "uuid": "d9e170af-6cee-46f2-b417-3d7be70d323f",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts": {
-    "time": 1646651461728.756,
+    "time": 1646713725677.3171,
     "uuid": "62f2c854-328a-4d1c-acf7-2695cc6a92bd",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab": {
-    "time": 1646703599613.476,
+    "time": 1646713725585.717,
     "uuid": "bf72d192-8f23-4d32-9f6c-59963dceff4e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture": {
-    "time": 1646651461698.5293,
+    "time": 1646713725667.5105,
     "uuid": "b9c969c2-fa37-4d44-ae4c-5d54dc6d0cea",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646705529420.2417,
+    "time": 1646713974945.4512,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject": {
-    "time": 1646651461703.567,
+    "time": 1646713725669.077,
     "uuid": "cee98462-661a-4e2c-93e7-e5dbc1fc61b8",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common": {
-    "time": 1646651461705.3582,
+    "time": 1646713725669.7097,
     "uuid": "28cd280e-0319-47ea-8d8a-c8378d397325",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/DataManager": {
-    "time": 1646651461706.3901,
+    "time": 1646713725670.0974,
     "uuid": "463de2d2-f268-4192-a3a4-778c09593706",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Helloworld.ts": {
-    "time": 1646651496010.7795,
+    "time": 1646713725670.3435,
     "uuid": "e1b90feb-a217-4493-849d-9a611900d683",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs": {
-    "time": 1646651461723.8074,
+    "time": 1646713725677.2036,
     "uuid": "aacf0774-7f28-4477-91ee-718484c0d88e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes": {
-    "time": 1646703693789.4336,
+    "time": 1646713752910.9985,
     "uuid": "c5195d45-509c-4dfc-8779-2b19bb6bfd7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646707354036.6482,
+    "time": 1646713725578.9106,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco": {
-    "time": 1646651461588.9602,
+    "time": 1646713725582.232,
     "uuid": "7f6655d9-51bb-4e6c-99f3-b22d65dcb4b6",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice": {
-    "time": 1646651461590.5618,
+    "time": 1646713725582.8882,
     "uuid": "a1f32c4d-dbb6-47b5-a3ec-3248d103ad42",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/DiceScene": {
-    "time": 1646651461591.6135,
+    "time": 1646713725583.4033,
     "uuid": "652a4385-0c8c-45d6-a2f4-c94ceb3d5d9d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room": {
-    "time": 1646651461594.2253,
+    "time": 1646713725584.4707,
     "uuid": "08ce230a-6715-4149-8098-5d3f61619ed1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot": {
-    "time": 1646651461596.928,
+    "time": 1646713725585.3933,
     "uuid": "d84e2125-fb44-473b-89df-66512a60c032",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco": {
-    "time": 1646651461641.8594,
+    "time": 1646713752278.1143,
     "uuid": "59796794-9b24-4155-8bfb-fbd554343937",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene": {
-    "time": 1646651461654.0688,
+    "time": 1646713725629.427,
     "uuid": "d96ce972-d0b8-4802-8d93-55976ac7b84c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball": {
-    "time": 1646651461659.4797,
+    "time": 1646713725637.792,
     "uuid": "8f83eaed-ffe8-434f-a7f0-9b6c5845d4dc",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room": {
-    "time": 1646651461671.7224,
+    "time": 1646713725641.5896,
     "uuid": "f36b3e64-03d6-4cf6-b045-9b59f5f2301f",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene": {
-    "time": 1646651461677.491,
+    "time": 1646713725660.0237,
     "uuid": "2dab6147-aa03-4d64-aeb8-c0ce1137cb7e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot": {
-    "time": 1646651461698.1423,
+    "time": 1646713725667.3093,
     "uuid": "d34942cb-dc42-454c-9c9e-4c7840405544",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/singleColor.png": {
-    "time": 1646651495995.4453,
+    "time": 1646713725667.4812,
     "uuid": "a8027877-d8d6-4645-97a0-52d4a0123dba",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/BaseScene.ts": {
-    "time": 1646651496008.242,
+    "time": 1646713725668.806,
     "uuid": "e53a98c7-ef00-44de-9e90-4953012b642d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/ModalLayer.ts": {
-    "time": 1646651496008.7861,
+    "time": 1646713725669.0461,
     "uuid": "59fb4646-2030-4242-b856-b389321b21bc",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/CCUtils.ts": {
-    "time": 1646651496009.3186,
+    "time": 1646713725669.4395,
     "uuid": "0a6eee75-4439-48e1-a5b7-f1c1886da1a1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/Module.ts": {
-    "time": 1646651496009.7112,
+    "time": 1646713725669.682,
     "uuid": "2deeb516-06a4-4a66-90f4-d49ae4231c52",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/DataManager/AssetManager.ts": {
-    "time": 1646651496010.2412,
+    "time": 1646713725670.0664,
     "uuid": "61248e9b-da61-4c57-b580-a534f4087ea2",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco": {
-    "time": 1646651461713.5571,
+    "time": 1646713725673.2886,
     "uuid": "8ac06599-a560-4393-9090-5ed82f43c882",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice": {
-    "time": 1646651461715.4443,
+    "time": 1646713725673.957,
     "uuid": "bccbf960-609e-4c79-a3bb-9583e2a046c4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceManager.ts": {
-    "time": 1646651496017.4355,
+    "time": 1646713725674.329,
     "uuid": "135ee212-5d62-4975-8324-b792eb8895fe",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceScene": {
-    "time": 1646651461717.509,
+    "time": 1646713725674.7876,
     "uuid": "a294a653-973e-4f1a-bff8-97c3fe7df062",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room": {
-    "time": 1646651461719.8064,
+    "time": 1646713725676.0996,
     "uuid": "d82060a0-d72a-4d73-9910-0118bacc5c16",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot": {
-    "time": 1646651461722.673,
+    "time": 1646713725676.9856,
     "uuid": "6512a393-edd4-476a-82cb-a040b9c94570",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/SlotManager.ts": {
-    "time": 1646651496022.3286,
+    "time": 1646713725677.1768,
     "uuid": "a9df4cfb-c3fa-4a76-a894-f89327e6abd5",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646707312450.945,
+    "time": 1646713973587.7449,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts": {
-    "time": 1646706208758.4075,
+    "time": 1646713725678.534,
     "uuid": "5c786c8a-3c37-4049-9798-7523e83e8d9d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646707303975.2988,
+    "time": 1646713882138.3552,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/DecoAlert.prefab": {
-    "time": 1646651495924.3662,
+    "time": 1646713725579.3955,
     "uuid": "f1dfce7a-4e07-453f-a5b0-f06839e12455",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/DecoMaster.prefab": {
-    "time": 1646651495925.7773,
+    "time": 1646713725579.9912,
     "uuid": "0c2d0ecc-52da-4d69-b28f-261f6a966f77",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileList.prefab": {
-    "time": 1646651495926.239,
+    "time": 1646713725580.3015,
     "uuid": "9b6b9ae0-4b45-4221-b8b9-f311b2ecafa4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileMaster.prefab": {
-    "time": 1646651495927.744,
+    "time": 1646713725580.9272,
     "uuid": "95303cd9-79f7-4e4a-88ee-ee5faa9936b4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileTitle.prefab": {
-    "time": 1646651495928.351,
+    "time": 1646713725581.2327,
     "uuid": "0c79ef5b-8590-43fd-8140-8d6409791cb1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/ImageNode.prefab": {
-    "time": 1646651495928.8354,
+    "time": 1646713725581.4922,
     "uuid": "2988ba81-0827-446a-8b6c-f3991a8b34a6",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/ListView.prefab": {
-    "time": 1646651495929.5889,
+    "time": 1646713725581.7812,
     "uuid": "e18480bd-5452-4212-a078-38e583b8e164",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/VectorList.prefab": {
-    "time": 1646651495930.268,
+    "time": 1646713725582.186,
     "uuid": "34c44d73-b52e-461c-9495-a9ecdd92b57c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice/DiceIcon.prefab": {
-    "time": 1646651495930.559,
+    "time": 1646713725582.609,
     "uuid": "d2c0ffa0-9cda-4efb-8c5b-def3b3a8aae1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice/DiceMaster.prefab": {
-    "time": 1646651495931.1855,
+    "time": 1646713725582.856,
     "uuid": "2f6d5de9-50b5-472d-84ba-e6a505092a2d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/DiceScene/TileRail.prefab": {
-    "time": 1646651495931.8147,
+    "time": 1646713725583.3486,
     "uuid": "a540bb6d-a0c9-4edf-bd98-64859df5c3ba",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/BaseRoom.prefab": {
-    "time": 1646651495932.694,
+    "time": 1646713725583.817,
     "uuid": "76a41520-4cb8-4fdd-beff-59a0174b0f02",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/RoomBlock.prefab": {
-    "time": 1646651495933.41,
+    "time": 1646713725584.1108,
     "uuid": "df56979a-8262-48ad-b2e7-44ce5f951060",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/RoomTemplate.prefab": {
-    "time": 1646651495934.4917,
+    "time": 1646713725584.4277,
     "uuid": "ef2e31a3-3b4a-4f6c-975a-2b00d430ca4e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotIcon.prefab": {
-    "time": 1646651495935.3313,
+    "time": 1646713725584.849,
     "uuid": "b6d51b95-7683-4063-8e78-2e276932c09c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotLine.prefab": {
-    "time": 1646651495936.2727,
+    "time": 1646713725585.1206,
     "uuid": "04c2d14b-df6b-4de4-b440-4a9bb0e70f63",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotMaster.prefab": {
-    "time": 1646651495936.8262,
+    "time": 1646713725585.3618,
     "uuid": "4b9ab36c-4c3d-4d64-b912-05f8e65ed520",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/arrow.png": {
-    "time": 1646651495938.0815,
+    "time": 1646713725586.2812,
     "uuid": "2c6209f0-09e3-4bb1-9ede-8e67857613d2",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_accesory_1.png": {
-    "time": 1646651495938.2935,
+    "time": 1646713725586.484,
     "uuid": "59f30e51-6c50-4055-a55d-944459b3c0f3",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_ground_1.png": {
-    "time": 1646651495940.3823,
+    "time": 1646713725586.8274,
     "uuid": "083bf11e-1add-4708-8322-51d62e30431d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_wall_1.png": {
-    "time": 1646651495940.201,
+    "time": 1646713725587.166,
     "uuid": "ddca6c32-23e7-47fe-b83c-ff3f23f13b88",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_wall_2.png": {
-    "time": 1646651495941.252,
+    "time": 1646713725587.5767,
     "uuid": "8b89e5ac-0fb1-4905-97d8-d549fdf533c5",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/default_sprite.png": {
-    "time": 1646651495940.8672,
+    "time": 1646713725587.9004,
     "uuid": "4f4af3bd-d2ce-4275-89d7-68de04b6f1e4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/temp_1.png": {
-    "time": 1646651495941.9558,
+    "time": 1646713725588.1177,
     "uuid": "8747c018-b8da-4319-b307-cb8b8e61b845",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv1.png": {
-    "time": 1646651495942.4502,
+    "time": 1646713725588.6074,
     "uuid": "af3a55c0-b23b-4de8-a019-703adb761526",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv2.png": {
-    "time": 1646651495943.087,
+    "time": 1646713725588.9602,
     "uuid": "d856b6ff-b2f5-4be2-8809-a182cd3653a5",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv3.png": {
-    "time": 1646651495943.7947,
+    "time": 1646713725589.348,
     "uuid": "dab0b839-8f72-479c-83e5-6d899d8f54b3",
     "missing": false
   },
@@ -7022,7 +7022,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/wall_1.png": {
-    "time": 1646651495946.3752,
+    "time": 1646713725591.0679,
     "uuid": "5b66c003-9843-4a38-a327-73e4a735391d",
     "missing": false
   },
@@ -7207,645 +7207,645 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Building01.png": {
-    "time": 1646651495968.0151,
+    "time": 1646713725610.6453,
     "uuid": "6f28a4a2-c92c-4e41-b85c-8cf5a55b617a",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cloud01.png": {
-    "time": 1646651495968.5994,
+    "time": 1646713725611.0977,
     "uuid": "e165be09-5710-4e54-a1a6-3af96ad6ef5e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cloud02.png": {
-    "time": 1646651495969.048,
+    "time": 1646713725611.6404,
     "uuid": "b86c3991-ed48-4ff6-84c1-4db07ca0b4f2",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube01.png": {
-    "time": 1646651495969.77,
+    "time": 1646713725612.197,
     "uuid": "983bc85a-8dfb-4e5d-b94d-97ef41456c3c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube02.png": {
-    "time": 1646651495969.9827,
+    "time": 1646713725612.823,
     "uuid": "6d3c0018-091b-486d-89c7-dc761cb892b7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube03.png": {
-    "time": 1646651495970.7964,
+    "time": 1646713725613.3684,
     "uuid": "f7a47dcf-737a-4888-8b53-d9146b3acf47",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube04.png": {
-    "time": 1646651495970.9946,
+    "time": 1646713725614.0208,
     "uuid": "a46fe07d-2092-4593-9276-253aeca71cd7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube05.png": {
-    "time": 1646651495971.3457,
+    "time": 1646713725614.4758,
     "uuid": "317fc2dd-5c2a-4004-a112-d500294fae06",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube06.png": {
-    "time": 1646651495971.9263,
+    "time": 1646713725614.9597,
     "uuid": "52077723-4a9f-4fb4-aaf0-32cad2f67d78",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/House01.png": {
-    "time": 1646651495973.432,
+    "time": 1646713725616.4126,
     "uuid": "ea049dc2-ce4a-4234-ae25-f824ffc0cc3c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Mart.png": {
-    "time": 1646651495973.7153,
+    "time": 1646713725617.9094,
     "uuid": "6184e359-1c9e-4189-8fd4-7b994eadd280",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Park.png": {
-    "time": 1646651495974.194,
+    "time": 1646713725619.3289,
     "uuid": "da66f816-331d-4f1f-af49-121168f240f4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Scr.png": {
-    "time": 1646651495974.6562,
+    "time": 1646713725619.6426,
     "uuid": "6cd56ac1-202c-43b6-a149-a9b0e1acf37a",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Tile01.png": {
-    "time": 1646651495975.0938,
+    "time": 1646713725620.7188,
     "uuid": "52d91f40-bcce-4825-a432-abef9c116c5a",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Tile02.png": {
-    "time": 1646651495976.2947,
+    "time": 1646713725621.3647,
     "uuid": "2857f780-2e12-496f-97a6-0f81bc837bfb",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/View.png": {
-    "time": 1646651497131.8206,
+    "time": 1646713725628.5852,
     "uuid": "f521caf0-b649-4c56-b374-fbe21698050e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/bg.png": {
-    "time": 1646651495967.7166,
+    "time": 1646713725629.3684,
     "uuid": "c22dcb8f-dd1b-4eee-b2c5-2ef2b3fc20a7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_0.png": {
-    "time": 1646651495979.0427,
+    "time": 1646713725630.003,
     "uuid": "dd3915c3-7f4f-4120-bb4c-9ca4319ceb9d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_1.png": {
-    "time": 1646651495979.4436,
+    "time": 1646713725630.3662,
     "uuid": "d73ac310-8fb3-451d-a8b8-b0151d080bab",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_2.png": {
-    "time": 1646651495980.3865,
+    "time": 1646713725630.7197,
     "uuid": "62217b0a-048f-4b3e-ab51-f6b9a4d735b6",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_3.png": {
-    "time": 1646651495981.191,
+    "time": 1646713725631.1465,
     "uuid": "329d191a-36a8-4d01-a89f-639e6d68dc83",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_4.png": {
-    "time": 1646651495981.5266,
+    "time": 1646713725632.1536,
     "uuid": "431d9794-39a3-43a7-9dc5-2c4d20eb093b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_5.png": {
-    "time": 1646651495981.9153,
+    "time": 1646713725632.5662,
     "uuid": "4f55cb7a-8596-4ec8-a8a3-358118ae84dd",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/bg_1.png": {
-    "time": 1646651496399.0242,
+    "time": 1646713725633.7222,
     "uuid": "a54766e5-30ab-43da-acf5-b8fac95c032d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/bg_2.png": {
-    "time": 1646651497187.7925,
+    "time": 1646713725637.6865,
     "uuid": "a45a4bfc-7cc2-4efc-839d-46a5144f143e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/border_1.png": {
-    "time": 1646651495983.7952,
+    "time": 1646713725638.7095,
     "uuid": "4c1940c8-21b8-4578-9a0c-32752bf54c29",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_1.png": {
-    "time": 1646651495983.9487,
+    "time": 1646713725638.9705,
     "uuid": "d4a9008a-47e6-4211-ad25-a870cb0eb137",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_m_1.png": {
-    "time": 1646651495986.7532,
+    "time": 1646713725639.7734,
     "uuid": "54196269-2afc-4f9e-ad46-aad76b876e73",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_m_2.png": {
-    "time": 1646651495987.1763,
+    "time": 1646713725640.1277,
     "uuid": "9c3b8d9b-b879-49ad-b82b-abfb63560277",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_1.png": {
-    "time": 1646651495987.81,
+    "time": 1646713725640.4265,
     "uuid": "5535a7c8-97cd-4f2c-9306-e81c0b57f0c7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_2.png": {
-    "time": 1646651495987.995,
+    "time": 1646713725640.68,
     "uuid": "4403e09a-66fa-42c6-a1fb-a6abe2cf693d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_1.png": {
-    "time": 1646651495988.3386,
+    "time": 1646713725640.882,
     "uuid": "0bee45e9-6736-4aff-950c-e71912f369bd",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_2.png": {
-    "time": 1646651495988.5215,
+    "time": 1646713725641.0923,
     "uuid": "2323f64b-bf3d-4176-ad3e-4583f02b0e98",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_3.png": {
-    "time": 1646651495988.992,
+    "time": 1646713725641.3118,
     "uuid": "1e2517ae-644c-43c0-bff8-f6834660a1c9",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_4.png": {
-    "time": 1646651495989.1782,
+    "time": 1646713725641.551,
     "uuid": "6de0309f-b7c3-4ae0-93ba-a25eb37d87d4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/01.png": {
-    "time": 1646651496399.714,
+    "time": 1646713725643.803,
     "uuid": "2b8af440-6286-400c-87a2-827a0f9b8886",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/02.png": {
-    "time": 1646651496400.0999,
+    "time": 1646713725645.782,
     "uuid": "164372ae-2a23-42a7-a069-cf085bd2b8b9",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/03.png": {
-    "time": 1646651496400.4517,
+    "time": 1646713725647.9773,
     "uuid": "e1c2036e-e1a7-4de3-bba2-4855bf206122",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg001.png": {
-    "time": 1646651495992.292,
+    "time": 1646713725648.499,
     "uuid": "08a9f659-7233-4b9f-bf18-2ab5e0dd0169",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg002_1.png": {
-    "time": 1646651496930.2842,
+    "time": 1646713725650.548,
     "uuid": "126f6326-4bb0-4066-b699-21b2b6ad5829",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg002_2.png": {
-    "time": 1646651496938.067,
+    "time": 1646713725653.1646,
     "uuid": "c7f275b9-c53a-4bcc-81f6-e4e1e49dd0e1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg003.png": {
-    "time": 1646651496401.4053,
+    "time": 1646713725656.152,
     "uuid": "9dd1f5ec-f3fd-4d6a-a14d-48dc1a14c4af",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg_View.png": {
-    "time": 1646651497064.2607,
+    "time": 1646713725659.6978,
     "uuid": "f611284f-8631-44c4-8d96-d2fd9091e2c0",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back1.png": {
-    "time": 1646651495995.8367,
+    "time": 1646713725661.148,
     "uuid": "33fd82b1-2d8f-45fd-a6fb-a403a869bf71",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back2.png": {
-    "time": 1646651495995.6272,
+    "time": 1646713725661.3792,
     "uuid": "9f202b47-78de-4367-92e6-354a17b1840f",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back3.png": {
-    "time": 1646651495996.023,
+    "time": 1646713725661.607,
     "uuid": "55430bc5-082b-4fe6-87fe-9b02366b7865",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.plist": {
-    "time": 1646651495996.3696,
+    "time": 1646713725661.86,
     "uuid": "b5eb27ca-9595-4d47-b15d-7a3f4d357ce2",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.png": {
-    "time": 1646651495996.9243,
+    "time": 1646713725662.16,
     "uuid": "54f04cc8-2141-4b47-9502-33999bfbb1b3",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_1_0.png": {
-    "time": 1646651495997.4094,
+    "time": 1646713725662.4385,
     "uuid": "b704a252-51f8-4b1e-8845-e359569302e0",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_1_1.png": {
-    "time": 1646651495997.7651,
+    "time": 1646713725662.6719,
     "uuid": "4efceb02-2097-4e4b-9d22-da2a2232661e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_2_0.png": {
-    "time": 1646651495998.248,
+    "time": 1646713725662.8853,
     "uuid": "aff5212f-fbdd-4d3c-b53b-7c7fc8eb0946",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_2_1.png": {
-    "time": 1646651495998.4353,
+    "time": 1646713725663.0862,
     "uuid": "f2578e21-9a8e-488f-9363-05dae13d5aec",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_3_0.png": {
-    "time": 1646651495998.8977,
+    "time": 1646713725663.2886,
     "uuid": "e93f209d-5cb1-4595-b685-647bbd277fb7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_3_1.png": {
-    "time": 1646651495999.1245,
+    "time": 1646713725663.494,
     "uuid": "3e1ee216-ad59-4f9c-befa-24544a765aac",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_4_0.png": {
-    "time": 1646651495999.6506,
+    "time": 1646713725663.6956,
     "uuid": "3cfd21d1-f66c-4927-9d54-630ac0b53b7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_4_1.png": {
-    "time": 1646651495999.9666,
+    "time": 1646713725663.9001,
     "uuid": "67ef9190-0c94-4aeb-9eee-f7c220029dc8",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_5_0.png": {
-    "time": 1646651496000.381,
+    "time": 1646713725664.107,
     "uuid": "dee044b8-1cf2-471e-a948-5bfc0c94c39a",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_5_1.png": {
-    "time": 1646651496000.7205,
+    "time": 1646713725664.3057,
     "uuid": "dc262020-a72a-465f-bf6b-12959915a8c7",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_6_0.png": {
-    "time": 1646651496001.4097,
+    "time": 1646713725664.5054,
     "uuid": "e0d71fcf-97cb-4d06-b8cf-78d1c11ccdf0",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_6_1.png": {
-    "time": 1646651496001.5886,
+    "time": 1646713725664.712,
     "uuid": "9c376dcd-aa02-4823-a11b-5c5bff60933b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/card.png": {
-    "time": 1646651496002.476,
+    "time": 1646713725664.9866,
     "uuid": "1c811c38-b88f-43d5-a6a1-4fba7f9f28a1",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_1.png": {
-    "time": 1646651496002.6956,
+    "time": 1646713725665.225,
     "uuid": "c0478f55-ada1-492e-9cec-4b469ece2704",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_2.png": {
-    "time": 1646651496002.9863,
+    "time": 1646713725665.4631,
     "uuid": "b16f8f72-1041-45be-906d-17b32a65b4bb",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_3.png": {
-    "time": 1646651496003.2876,
+    "time": 1646713725665.7095,
     "uuid": "f4722232-02c2-4a24-89e2-3dbb8818f690",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_4.png": {
-    "time": 1646651496003.6519,
+    "time": 1646713725666.0032,
     "uuid": "8fd45bf4-a069-4bb8-a8a5-f8c620d6c89e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_5.png": {
-    "time": 1646651496004.2405,
+    "time": 1646713725666.294,
     "uuid": "f8805bfc-087b-4747-812c-f069f16db93e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_6.png": {
-    "time": 1646651496005.1914,
+    "time": 1646713725666.5298,
     "uuid": "cfcb8040-3567-4c74-a5be-9a7a193c9f69",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/pig.png": {
-    "time": 1646651496004.8442,
+    "time": 1646713725666.7798,
     "uuid": "a244d283-fa1c-4e49-95bd-92dafb4d090d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/wild_1_0.png": {
-    "time": 1646651496006.2966,
+    "time": 1646713725666.9958,
     "uuid": "4cfd1ef5-ea88-4584-88da-e9be15be3e21",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/wild_1_1.png": {
-    "time": 1646651496006.1057,
+    "time": 1646713725667.2786,
     "uuid": "663b534e-ff24-400f-bfa6-51d0e04e737e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoAlert.ts": {
-    "time": 1646651496011.6064,
+    "time": 1646713725670.9285,
     "uuid": "a9f2a564-0e4b-4a5b-875b-5eee26c55613",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoMaster.ts": {
-    "time": 1646651496011.807,
+    "time": 1646713725671.2607,
     "uuid": "9ff0f118-2562-415a-af47-4ee3caa9db7d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoTypes.ts": {
-    "time": 1646651496018.575,
+    "time": 1646713725671.5757,
     "uuid": "8a7292bf-4edf-4794-ac6c-a34027678f36",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileList.ts": {
-    "time": 1646651496012.716,
+    "time": 1646713725671.8152,
     "uuid": "30a70f96-a8d5-4e6c-81c9-f422b989f257",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileMaster.ts": {
-    "time": 1646651496013.0774,
+    "time": 1646713725672.1062,
     "uuid": "0d3ce7a4-770d-4ab7-b97a-52a979540f0a",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileTitle.ts": {
-    "time": 1646651496013.425,
+    "time": 1646713725672.3865,
     "uuid": "867b23da-1755-4b34-9d85-1a0d2a2de5d6",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ImageNode.ts": {
-    "time": 1646651496013.817,
+    "time": 1646713725672.6338,
     "uuid": "f0ea0f96-2f49-4836-b7f4-7605f63fa1ad",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ListView.ts": {
-    "time": 1646651496014.1702,
+    "time": 1646713725672.997,
     "uuid": "21a77dab-1f78-4367-91a1-1868c332d61c",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/VectorList.ts": {
-    "time": 1646651496014.9998,
+    "time": 1646713725673.2551,
     "uuid": "99778c6f-e67a-4e18-9095-1ddbcae88e79",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceIcon.ts": {
-    "time": 1646651496016.1565,
+    "time": 1646713725673.6663,
     "uuid": "53adc621-dbbd-4433-9a62-0413b02ee1b3",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceMaster.ts": {
-    "time": 1646651496017.009,
+    "time": 1646713725673.9277,
     "uuid": "019481ed-b6b1-4012-9b6b-010bcbefb9f8",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceScene/TileRail.ts": {
-    "time": 1646651496018.1543,
+    "time": 1646713725674.7522,
     "uuid": "9df55a29-0ac0-46ce-b566-3bf2a1e355c0",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/BaseRoom.ts": {
-    "time": 1646651496018.8706,
+    "time": 1646713725675.1619,
     "uuid": "9159792a-055f-4e17-b48c-2c27c429e370",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomBlock.ts": {
-    "time": 1646651496019.4617,
+    "time": 1646713725675.8125,
     "uuid": "ac1ba57d-4847-4aed-8448-0150e32d0dc4",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomTemplate.ts": {
-    "time": 1646651496019.8118,
+    "time": 1646713725676.068,
     "uuid": "38120173-4dcd-41ba-a4ea-fd8ccdf72cc5",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotIcon.ts": {
-    "time": 1646651496020.5186,
+    "time": 1646713725676.4731,
     "uuid": "20e4ad5b-4ec3-4663-bd14-51433f6b92c6",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotLine.ts": {
-    "time": 1646651496021.0525,
+    "time": 1646713725676.7249,
     "uuid": "dc9ef2d9-01fe-436d-9b50-763c252e5a68",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotMaster.ts": {
-    "time": 1646651496021.537,
+    "time": 1646713725676.9563,
     "uuid": "ab0acfb1-fc5a-489b-a267-e3f61fd9d8e9",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources.meta": {
-    "time": 1646651496006.9744
+    "time": 1646713725578.4912
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes.meta": {
-    "time": 1646651496008.0762
+    "time": 1646713725667.717
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts.meta": {
-    "time": 1646651496025.0815
+    "time": 1646713725668.3938
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab.meta": {
-    "time": 1646651495937.6301
+    "time": 1646713725578.7654
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture.meta": {
-    "time": 1646651496006.6418
+    "time": 1646713725586.0159
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject.meta": {
-    "time": 1646651496008.9573
+    "time": 1646713725668.637
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common.meta": {
-    "time": 1646651496010.0867
+    "time": 1646713725669.2825
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/DataManager.meta": {
-    "time": 1646651496010.6135
+    "time": 1646713725669.9048
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs.meta": {
-    "time": 1646651496022.6772
+    "time": 1646713725670.6282
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes.meta": {
-    "time": 1646651496024.768
+    "time": 1646713725677.3982
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco.meta": {
-    "time": 1646651495930.9778
+    "time": 1646713725579.1826
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice.meta": {
-    "time": 1646651495931.5967
+    "time": 1646713725582.4424
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/DiceScene.meta": {
-    "time": 1646651495932.4463
+    "time": 1646713725583.1147
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room.meta": {
-    "time": 1646651495935.1045
+    "time": 1646713725583.6355
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Helloworld.ts.meta": {
-    "time": 1646651496010.943
+    "time": 1646713725670.5012
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot.meta": {
-    "time": 1646651495937.2405
+    "time": 1646713725584.6807
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco.meta": {
-    "time": 1646651495966.9836
+    "time": 1646713725586.146
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene.meta": {
-    "time": 1646651495978.433
+    "time": 1646713725609.5178
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball.meta": {
-    "time": 1646651495983.2283
+    "time": 1646713725629.7402
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room.meta": {
-    "time": 1646651495989.7146
+    "time": 1646713725638.3484
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene.meta": {
-    "time": 1646651495995.1301
+    "time": 1646713725641.817
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot.meta": {
-    "time": 1646651496006.4849
+    "time": 1646713725660.992
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/BaseScene.ts.meta": {
-    "time": 1646651496008.4268
+    "time": 1646713725668.9236
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/ModalLayer.ts.meta": {
-    "time": 1646651496008.6128
+    "time": 1646713725669.164
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene.meta": {
-    "time": 1646651496007.6938
+    "time": 1646713725668.271
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab.meta": {
-    "time": 1646651495923.9573
+    "time": 1646713725579.0503
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco.meta": {
-    "time": 1646651496015.9897
+    "time": 1646713725670.7754
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/CCUtils.ts.meta": {
-    "time": 1646651496009.5068
+    "time": 1646713725669.558
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice.meta": {
-    "time": 1646651496017.2642
+    "time": 1646713725673.5034
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Common/Module.ts.meta": {
-    "time": 1646651496009.899
+    "time": 1646713725669.7913
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/DataManager/AssetManager.ts.meta": {
-    "time": 1646651496010.3933
+    "time": 1646713725670.1794
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceScene.meta": {
-    "time": 1646651496018.5217
+    "time": 1646713725674.585
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room.meta": {
-    "time": 1646651496020.1558
+    "time": 1646713725675.0044
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot.meta": {
-    "time": 1646651496022.25
+    "time": 1646713725676.3145
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceManager.ts.meta": {
-    "time": 1646651496017.8254
+    "time": 1646713725674.4568
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/SlotManager.ts.meta": {
-    "time": 1646651496022.5002
+    "time": 1646713725677.2864
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts.meta": {
-    "time": 1646651496023.3894
+    "time": 1646713725678.3613
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts.meta": {
-    "time": 1646651496023.9663
+    "time": 1646713725678.6511
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts.meta": {
-    "time": 1646651496024.5786
+    "time": 1646713725678.993
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/DecoAlert.prefab.meta": {
-    "time": 1646651495925.0435
+    "time": 1646713725579.5547
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileList.prefab.meta": {
-    "time": 1646651495926.2969
+    "time": 1646713725580.4211
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/DecoMaster.prefab.meta": {
-    "time": 1646651495928.1472
+    "time": 1646713725580.1482
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileMaster.prefab.meta": {
-    "time": 1646651495927.9487
+    "time": 1646713725581.0676
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/ImageNode.prefab.meta": {
-    "time": 1646651495929.0293
+    "time": 1646713725581.6167
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/FileTitle.prefab.meta": {
-    "time": 1646651495928.6292
+    "time": 1646713725581.3638
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/ListView.prefab.meta": {
-    "time": 1646651495929.7976
+    "time": 1646713725581.9116
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Deco/VectorList.prefab.meta": {
-    "time": 1646651495930.0078
+    "time": 1646713725582.318
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/singleColor.png.meta": {
-    "time": 1646651495995.2952
+    "time": 1646713725667.603
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice/DiceMaster.prefab.meta": {
-    "time": 1646651495931.3982
+    "time": 1646713725582.9863
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Dice/DiceIcon.prefab.meta": {
-    "time": 1646651495930.7688
+    "time": 1646713725582.725
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/DiceScene/TileRail.prefab.meta": {
-    "time": 1646651495932.2131
+    "time": 1646713725583.4998
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/BaseRoom.prefab.meta": {
-    "time": 1646651495933.1218
+    "time": 1646713725583.9348
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/RoomBlock.prefab.meta": {
-    "time": 1646651495934.015
+    "time": 1646713725584.2786
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Room/RoomTemplate.prefab.meta": {
-    "time": 1646651495934.6995
+    "time": 1646713725584.558
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotIcon.prefab.meta": {
-    "time": 1646651495935.873
+    "time": 1646713725584.9658
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotLine.prefab.meta": {
-    "time": 1646651495936.3438
+    "time": 1646713725585.235
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Slot/SlotMaster.prefab.meta": {
-    "time": 1646651495937.4417
+    "time": 1646713725585.4785
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/arrow.png.meta": {
-    "time": 1646651495939.3523
+    "time": 1646713725586.397
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_accesory_1.png.meta": {
-    "time": 1646651495939.1162
+    "time": 1646713725586.6072
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_wall_2.png.meta": {
-    "time": 1646651495940.712
+    "time": 1646713725587.7932
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_wall_1.png.meta": {
-    "time": 1646651495940.5535
+    "time": 1646713725587.3118
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/deco_ground_1.png.meta": {
-    "time": 1646651495940.0054
+    "time": 1646713725586.9678
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/default_sprite.png.meta": {
-    "time": 1646651495941.892
+    "time": 1646713725588.029
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv1.png.meta": {
-    "time": 1646651495942.6506
+    "time": 1646713725588.7456
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv2.png.meta": {
-    "time": 1646651495942.858
+    "time": 1646713725589.1047
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/temp_1.png.meta": {
-    "time": 1646651495942.1648
+    "time": 1646713725588.2515
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv3.png.meta": {
-    "time": 1646651495943.315
+    "time": 1646713725589.5327
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장2.png.meta": {
     "time": 1646651610070.3525
@@ -7860,7 +7860,7 @@
     "time": 1646651610080.25
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/wall_1.png.meta": {
-    "time": 1646651495946.1392
+    "time": 1646713725591.2542
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석1.png.meta": {
     "time": 1646651610106.016
@@ -7965,286 +7965,598 @@
     "time": 1646651610432.3906
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube01.png.meta": {
-    "time": 1646651495969.488
+    "time": 1646713725612.5461
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀벽.png.meta": {
     "time": 1646651610463.0605
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cloud01.png.meta": {
-    "time": 1646651495968.8438
+    "time": 1646713725611.3145
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cloud02.png.meta": {
-    "time": 1646651495969.2908
+    "time": 1646713725611.8333
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Building01.png.meta": {
-    "time": 1646651495968.3933
+    "time": 1646713725610.8296
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube03.png.meta": {
-    "time": 1646651495970.4407
+    "time": 1646713725613.6277
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube04.png.meta": {
-    "time": 1646651495971.1501
+    "time": 1646713725614.1875
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube02.png.meta": {
-    "time": 1646651495970.2063
+    "time": 1646713725613.0225
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube05.png.meta": {
-    "time": 1646651495971.6848
+    "time": 1646713725614.6257
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Cube06.png.meta": {
-    "time": 1646651495972.1904
+    "time": 1646713725615.1233
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Scr.png.meta": {
-    "time": 1646651495976.477
+    "time": 1646713725620.4265
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/House01.png.meta": {
-    "time": 1646651495972.458
+    "time": 1646713725616.6592
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Park.png.meta": {
-    "time": 1646651495974.8518
+    "time": 1646713725619.5242
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Mart.png.meta": {
-    "time": 1646651495973.9465
+    "time": 1646713725618.1401
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Tile01.png.meta": {
-    "time": 1646651495975.5322
+    "time": 1646713725620.8694
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/Tile02.png.meta": {
-    "time": 1646651495977.0479
+    "time": 1646713725621.5771
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/bg.png.meta": {
-    "time": 1646651495968.328
+    "time": 1646713725629.5776
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_0.png.meta": {
-    "time": 1646651495979.2017
+    "time": 1646713725630.1545
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_1.png.meta": {
-    "time": 1646651495979.9175
+    "time": 1646713725630.521
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/DiceScene/View.png.meta": {
-    "time": 1646651495976.6536
+    "time": 1646713725628.8816
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_2.png.meta": {
-    "time": 1646651495980.5706
+    "time": 1646713725630.9507
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_3.png.meta": {
-    "time": 1646651495980.994
+    "time": 1646713725631.966
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_4.png.meta": {
-    "time": 1646651495981.7104
+    "time": 1646713725632.3792
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/Bead_5.png.meta": {
-    "time": 1646651495982.0693
+    "time": 1646713725632.7456
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/border_1.png.meta": {
-    "time": 1646651495983.4102
+    "time": 1646713725638.8455
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/bg_1.png.meta": {
-    "time": 1646651495982.5564
+    "time": 1646713725633.9563
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/bg_2.png.meta": {
-    "time": 1646651495982.9915
+    "time": 1646713725638.2139
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_1.png.meta": {
-    "time": 1646651495986.518
+    "time": 1646713725639.6895
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_m_1.png.meta": {
-    "time": 1646651495986.9573
+    "time": 1646713725639.9973
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/ground_m_2.png.meta": {
-    "time": 1646651495987.4446
+    "time": 1646713725640.2825
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_2.png.meta": {
-    "time": 1646651495988.8293
+    "time": 1646713725641.2202
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_1.png.meta": {
-    "time": 1646651495987.643
+    "time": 1646713725640.568
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_2.png.meta": {
-    "time": 1646651495988.1768
+    "time": 1646713725640.7983
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_1.png.meta": {
-    "time": 1646651495988.6738
+    "time": 1646713725641.0015
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_4.png.meta": {
-    "time": 1646651495989.5554
+    "time": 1646713725641.6907
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Room/wall_m_3.png.meta": {
-    "time": 1646651495989.3628
+    "time": 1646713725641.4324
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/02.png.meta": {
-    "time": 1646651495991.2651
+    "time": 1646713725646.0027
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/03.png.meta": {
-    "time": 1646651495992.8975
+    "time": 1646713725648.249
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/01.png.meta": {
-    "time": 1646651495990.3645
+    "time": 1646713725644.1084
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg001.png.meta": {
-    "time": 1646651495992.6946
+    "time": 1646713725648.7139
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg002_1.png.meta": {
-    "time": 1646651495993.098
+    "time": 1646713725650.9084
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg002_2.png.meta": {
-    "time": 1646651495993.8179
+    "time": 1646713725653.532
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg003.png.meta": {
-    "time": 1646651495994.292
+    "time": 1646713725656.4543
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back1.png.meta": {
-    "time": 1646651495999.3152
+    "time": 1646713725661.2854
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/RoomScene/Bg_View.png.meta": {
-    "time": 1646651495994.9836
+    "time": 1646713725659.98
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back2.png.meta": {
-    "time": 1646651495996.1855
+    "time": 1646713725661.508
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/back3.png.meta": {
-    "time": 1646651495996.5503
+    "time": 1646713725661.741
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.png.meta": {
-    "time": 1646651495997.227
+    "time": 1646713725662.3425
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_2_0.png.meta": {
-    "time": 1646651496395.015
+    "time": 1646713725663.0005
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_1_1.png.meta": {
-    "time": 1646651495998.0503
+    "time": 1646713725662.7944
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_1_0.png.meta": {
-    "time": 1646651495997.5723
+    "time": 1646713725662.5852
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_2_1.png.meta": {
-    "time": 1646651495998.5808
+    "time": 1646713725663.1995
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.plist.meta": {
-    "time": 1646651495996.728
+    "time": 1646713725661.9968
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_3_0.png.meta": {
-    "time": 1646651495998.743
+    "time": 1646713725663.4062
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_3_1.png.meta": {
-    "time": 1646651495999.4963
+    "time": 1646713725663.6072
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_4_0.png.meta": {
-    "time": 1646651495999.7954
+    "time": 1646713725663.8115
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_4_1.png.meta": {
-    "time": 1646651496000.1501
+    "time": 1646713725664.0188
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_5_0.png.meta": {
-    "time": 1646651496000.548
+    "time": 1646713725664.2222
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_5_1.png.meta": {
-    "time": 1646651496000.8865
+    "time": 1646713725664.421
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_6_0.png.meta": {
-    "time": 1646651496001.2363
+    "time": 1646713725664.6238
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy_6_1.png.meta": {
-    "time": 1646651496001.7622
+    "time": 1646713725664.8296
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/card.png.meta": {
-    "time": 1646651496001.9475
+    "time": 1646713725665.1099
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_1.png.meta": {
-    "time": 1646651496005.4595
+    "time": 1646713725665.3428
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_2.png.meta": {
-    "time": 1646651496003.1199
+    "time": 1646713725665.5837
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_3.png.meta": {
-    "time": 1646651496003.4849
+    "time": 1646713725665.8772
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_4.png.meta": {
-    "time": 1646651496003.8484
+    "time": 1646713725666.1687
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_5.png.meta": {
-    "time": 1646651496004.4514
+    "time": 1646713725666.4087
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/dice_6.png.meta": {
-    "time": 1646651496004.6504
+    "time": 1646713725666.6526
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoAlert.ts.meta": {
-    "time": 1646651496011.1738
+    "time": 1646713725671.0513
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoMaster.ts.meta": {
-    "time": 1646651496012.079
+    "time": 1646713725671.4539
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/DecoTypes.ts.meta": {
-    "time": 1646651496012.3047
+    "time": 1646713725671.6965
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileList.ts.meta": {
-    "time": 1646651496015.7703
+    "time": 1646713725671.941
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileMaster.ts.meta": {
-    "time": 1646651496013.2642
+    "time": 1646713725672.2488
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/FileTitle.ts.meta": {
-    "time": 1646651496013.623
+    "time": 1646713725672.5098
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/pig.png.meta": {
-    "time": 1646651496005.6785
+    "time": 1646713725666.9053
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ImageNode.ts.meta": {
-    "time": 1646651496013.9663
+    "time": 1646713725672.7976
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/ListView.ts.meta": {
-    "time": 1646651496014.8093
+    "time": 1646713725673.129
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Deco/VectorList.ts.meta": {
-    "time": 1646651496015.3452
+    "time": 1646713725673.3782
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceIcon.ts.meta": {
-    "time": 1646651496016.5525
+    "time": 1646713725673.7935
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Dice/DiceMaster.ts.meta": {
-    "time": 1646651496017.0747
+    "time": 1646713725674.0903
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/DiceScene/TileRail.ts.meta": {
-    "time": 1646651496018.3423
+    "time": 1646713725674.8857
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/BaseRoom.ts.meta": {
-    "time": 1646651496019.0562
+    "time": 1646713725675.324
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomBlock.ts.meta": {
-    "time": 1646651496019.6504
+    "time": 1646713725675.9348
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/wild_1_0.png.meta": {
-    "time": 1646651496005.8657
+    "time": 1646713725667.1897
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Room/RoomTemplate.ts.meta": {
-    "time": 1646651496019.9836
+    "time": 1646713725676.1902
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotIcon.ts.meta": {
-    "time": 1646651496020.8628
+    "time": 1646713725676.598
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotLine.ts.meta": {
-    "time": 1646651496021.319
+    "time": 1646713725676.8352
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Prefabs/Slot/SlotMaster.ts.meta": {
-    "time": 1646651496021.985
+    "time": 1646713725677.0654
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/wild_1_1.png.meta": {
-    "time": 1646651496006.8115
+    "time": 1646713725667.3972
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/TilePrefab.prefab.meta": {
-    "time": 1646703599623.3608
+    "time": 1646713725585.8984
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/TilePrefab.prefab": {
-    "time": 1646703771207.472,
+    "time": 1646713725585.6833,
     "uuid": "2d0c94d1-1fde-4aec-b9ec-8f375607205e",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts.meta": {
-    "time": 1646703693791.767
+    "time": 1646713725679.2441
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts": {
-    "time": 1646703712256.044,
+    "time": 1646713725679.1167,
     "uuid": "b5cc30e5-c86e-48db-976d-47e16629d45d",
     "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장1.png": {
+    "time": 1646713725589.795,
+    "uuid": "a8015cae-20db-4060-8f24-47b18d2f88dc",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장2.png": {
+    "time": 1646713725590.247,
+    "uuid": "06fdd688-a7d6-4093-8740-3e5274c6554b",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장3.png": {
+    "time": 1646713725590.6702,
+    "uuid": "da15d195-1dc7-4720-84dd-c1929eb1a9fd",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥1.png": {
+    "time": 1646713725591.6602,
+    "uuid": "4db3e0b3-fa77-4f3b-b88a-dee05be6a57a",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥2.png": {
+    "time": 1646713725592.22,
+    "uuid": "466bab26-e9ab-4d42-8329-3848847b66a3",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥3.png": {
+    "time": 1646713725592.9219,
+    "uuid": "517543a9-505c-4573-bcb2-ee14b1abcacc",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석1.png": {
+    "time": 1646713725593.498,
+    "uuid": "6c3d2cf8-6c78-401b-b7e6-1a8bd918b87f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석2.png": {
+    "time": 1646713725593.8066,
+    "uuid": "72b3b3dd-2e28-4b57-8995-1e9188ddb18c",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석3.png": {
+    "time": 1646713725594.1223,
+    "uuid": "56463077-7394-434b-ad2e-eb86be676658",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반1.png": {
+    "time": 1646713725594.4724,
+    "uuid": "0405179e-283d-47ad-b05c-b882446f5e6f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반2.png": {
+    "time": 1646713725594.7917,
+    "uuid": "05eca36c-3529-43fd-9844-e9474a48bb54",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반3.png": {
+    "time": 1646713725595.1084,
+    "uuid": "cdf61712-7925-4a9b-8321-afb0be7f73ef",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽1.png": {
+    "time": 1646713725595.4446,
+    "uuid": "fe01a932-b752-4402-8030-538d54440a1b",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽2.png": {
+    "time": 1646713725595.893,
+    "uuid": "5276177f-4cc1-42f7-99cb-b5a21a19b72c",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽3.png": {
+    "time": 1646713725596.4067,
+    "uuid": "847a3f75-cace-4454-9b1e-255b01d7a629",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진1.png": {
+    "time": 1646713725596.7153,
+    "uuid": "6105281f-6fb5-4b51-a7a9-ba294c3a79bf",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진2.png": {
+    "time": 1646713725597.1147,
+    "uuid": "5e082277-1aae-4b57-9c6c-3634f4ad9e64",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진3.png": {
+    "time": 1646713725597.516,
+    "uuid": "8f315804-cda1-48b7-99ca-f20ed18c2b75",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/상품이미지_2.png": {
+    "time": 1646713725599.3354,
+    "uuid": "dfd604c9-0084-47c9-9e8b-4691afd7ac86",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파1.png": {
+    "time": 1646713725599.801,
+    "uuid": "be5e8c8f-73cd-49a7-88ab-ca5c954a9d87",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파2.png": {
+    "time": 1646713725600.1519,
+    "uuid": "1354bbeb-8be3-4a68-8589-666bd82a3df8",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파3.png": {
+    "time": 1646713725600.6228,
+    "uuid": "5fb67734-7076-4ded-b015-318e13f890f2",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽1.png": {
+    "time": 1646713725600.9846,
+    "uuid": "8d9f3f2f-81aa-4ae9-9658-f027480dba9e",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽2.png": {
+    "time": 1646713725601.426,
+    "uuid": "301ad8a2-27c4-42a3-8420-07e2eed583db",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽3.png": {
+    "time": 1646713725602.7126,
+    "uuid": "44f3643f-5595-4a32-b378-2664241aac71",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문1.png": {
+    "time": 1646713725603.2927,
+    "uuid": "760d9e3b-3d1b-49fa-b25a-1b1d21438e7f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문2.png": {
+    "time": 1646713725603.812,
+    "uuid": "e12c78ab-9dcd-46ef-be33-36804d6fcca1",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문3.png": {
+    "time": 1646713725604.2615,
+    "uuid": "620a454c-b626-4516-8da6-cf93a16b8ca0",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫1.png": {
+    "time": 1646713725604.693,
+    "uuid": "eba87095-4202-43b1-9e6b-63ed6125c96f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫2.png": {
+    "time": 1646713725605.1536,
+    "uuid": "f3c22134-f82e-49f3-88b1-289d16e4095f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫3.png": {
+    "time": 1646713725605.5334,
+    "uuid": "afa3e007-54b0-490d-a548-2d47979eb077",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블1.png": {
+    "time": 1646713725605.959,
+    "uuid": "45705f94-90c3-4cbe-91b1-b6185ef30bd2",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블2.png": {
+    "time": 1646713725606.4297,
+    "uuid": "c0567d12-0d09-4e03-b28c-795f8095adde",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블3.png": {
+    "time": 1646713725606.859,
+    "uuid": "7ecbf5be-ecbb-4e78-855d-f080cfcc7be9",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자1.png": {
+    "time": 1646713725607.252,
+    "uuid": "26e006a4-cbc7-426d-8f38-be908815da58",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자2.png": {
+    "time": 1646713725607.592,
+    "uuid": "ad619e35-a4e1-4b20-b8a3-7a543da22b3f",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자3.png": {
+    "time": 1646713725608.0215,
+    "uuid": "099572f4-b8c8-4868-b7b6-a62ee0e59751",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀바닥.png": {
+    "time": 1646713725608.7087,
+    "uuid": "019531ec-90d5-4bb9-85a4-a9db73322ce3",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀벽.png": {
+    "time": 1646713725609.1914,
+    "uuid": "85cbdb30-654d-460c-9f2d-2f81b997cf6e",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장2.png.meta": {
+    "time": 1646713796990.142
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장1.png.meta": {
+    "time": 1646713796999.7754
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장3.png.meta": {
+    "time": 1646713797001.0564
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥1.png.meta": {
+    "time": 1646713797028.395
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥2.png.meta": {
+    "time": 1646713797040.0547
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석1.png.meta": {
+    "time": 1646713797042.0176
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥3.png.meta": {
+    "time": 1646713797043.994
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석2.png.meta": {
+    "time": 1646713797058.6924
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석3.png.meta": {
+    "time": 1646713797065.3079
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반2.png.meta": {
+    "time": 1646713797074.2493
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반1.png.meta": {
+    "time": 1646713797079.4832
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반3.png.meta": {
+    "time": 1646713797083.0183
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽1.png.meta": {
+    "time": 1646713797105.9197
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽2.png.meta": {
+    "time": 1646713797116.7275
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진1.png.meta": {
+    "time": 1646713797120.6394
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽3.png.meta": {
+    "time": 1646713797123.4856
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진2.png.meta": {
+    "time": 1646713797124.6282
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진3.png.meta": {
+    "time": 1646713797150.37
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파1.png.meta": {
+    "time": 1646713797160.6648
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파3.png.meta": {
+    "time": 1646713797178.4863
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파2.png.meta": {
+    "time": 1646713797185.7993
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/상품이미지_2.png.meta": {
+    "time": 1646713797197.5864
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽1.png.meta": {
+    "time": 1646713797226.7847
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문1.png.meta": {
+    "time": 1646713797234.604
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽2.png.meta": {
+    "time": 1646713797235.624
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽3.png.meta": {
+    "time": 1646713797241.5376
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문2.png.meta": {
+    "time": 1646713797244.44
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문3.png.meta": {
+    "time": 1646713797264.4937
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫2.png.meta": {
+    "time": 1646713797266.8
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫1.png.meta": {
+    "time": 1646713797270.7244
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫3.png.meta": {
+    "time": 1646713797272.8015
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블1.png.meta": {
+    "time": 1646713797275.6743
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블2.png.meta": {
+    "time": 1646713797297.1956
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블3.png.meta": {
+    "time": 1646713797299.6233
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자1.png.meta": {
+    "time": 1646713797303.3623
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자3.png.meta": {
+    "time": 1646713797304.67
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자2.png.meta": {
+    "time": 1646713797309.357
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀바닥.png.meta": {
+    "time": 1646713797355.8997
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀벽.png.meta": {
+    "time": 1646713797358.256
   }
 }

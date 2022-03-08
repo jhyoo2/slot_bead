@@ -11,7 +11,7 @@
     "6c48a": {
       "importer": "texture",
       "uuid": "f3c22134-f82e-49f3-88b1-289d16e4095f@6c48a",
-      "displayName": "카펫2",
+      "displayName": "카펫2",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -34,7 +34,7 @@
     "f9941": {
       "importer": "sprite-frame",
       "uuid": "f3c22134-f82e-49f3-88b1-289d16e4095f@f9941",
-      "displayName": "카펫2",
+      "displayName": "카펫2",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
