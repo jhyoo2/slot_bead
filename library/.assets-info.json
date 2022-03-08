@@ -6677,7 +6677,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes": {
-    "time": 1646718537191.288,
+    "time": 1646728650666.466,
     "uuid": "d9e170af-6cee-46f2-b417-3d7be70d323f",
     "missing": false
   },
@@ -6687,7 +6687,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab": {
-    "time": 1646713725585.717,
+    "time": 1646728650665.7974,
     "uuid": "bf72d192-8f23-4d32-9f6c-59963dceff4e",
     "missing": false
   },
@@ -6697,7 +6697,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646720151995.505,
+    "time": 1646731359081.1262,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
@@ -6727,12 +6727,12 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes": {
-    "time": 1646718537192.7957,
+    "time": 1646728650667.5393,
     "uuid": "c5195d45-509c-4dfc-8779-2b19bb6bfd7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646713725578.9106,
+    "time": 1646728650666.193,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
@@ -6762,7 +6762,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco": {
-    "time": 1646718537191.0947,
+    "time": 1646721406258.5596,
     "uuid": "59796794-9b24-4155-8bfb-fbd554343937",
     "missing": false
   },
@@ -6857,7 +6857,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646718537192.4668,
+    "time": 1646728650667.3792,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
@@ -6867,7 +6867,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646720150803.4912,
+    "time": 1646728650667.873,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
@@ -8443,120 +8443,120 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장2.png.meta": {
-    "time": 1646718542803.5916
+    "time": 1646721408698.189
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장1.png.meta": {
-    "time": 1646718543027.4067
+    "time": 1646721408696.2107
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/tv장3.png.meta": {
-    "time": 1646718542805.4587
+    "time": 1646721408697.1472
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥1.png.meta": {
-    "time": 1646718542805.9197
+    "time": 1646721408697.5469
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥2.png.meta": {
-    "time": 1646718542823.422
+    "time": 1646721408712.1936
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석1.png.meta": {
-    "time": 1646718542864.1873
+    "time": 1646721408742.4197
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/바닥3.png.meta": {
-    "time": 1646718542807.721
+    "time": 1646721408751.485
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석2.png.meta": {
-    "time": 1646718542873.5874
+    "time": 1646721408743.1199
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/방석3.png.meta": {
-    "time": 1646718542866.9058
+    "time": 1646721408748.3438
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반2.png.meta": {
-    "time": 1646718542870.0117
+    "time": 1646721408787.317
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반1.png.meta": {
-    "time": 1646718542867.6655
+    "time": 1646721408755.1858
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽선반3.png.meta": {
-    "time": 1646718542922.1165
+    "time": 1646721408781.7937
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽1.png.meta": {
-    "time": 1646718542918.7737
+    "time": 1646721408790.3784
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽2.png.meta": {
-    "time": 1646718542917.8967
+    "time": 1646721408790.082
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진1.png.meta": {
-    "time": 1646718543006.5996
+    "time": 1646721408823.1733
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/벽왼쪽3.png.meta": {
-    "time": 1646718542930.0708
+    "time": 1646721408800.6758
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진2.png.meta": {
-    "time": 1646718543003.4556
+    "time": 1646721408829.3691
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/사진3.png.meta": {
-    "time": 1646718542929.2249
+    "time": 1646721408828.0547
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파1.png.meta": {
-    "time": 1646718543018.946
+    "time": 1646721408840.2742
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파3.png.meta": {
-    "time": 1646718543265.5693
+    "time": 1646721408883.152
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/쇼파2.png.meta": {
-    "time": 1646718543149.3677
+    "time": 1646721408882.768
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/상품이미지_2.png.meta": {
-    "time": 1646718543036.5615
+    "time": 1646721408857.442
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽1.png.meta": {
-    "time": 1646718543107.513
+    "time": 1646721408881.9404
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문1.png.meta": {
-    "time": 1646718543180.9717
+    "time": 1646721409001.7246
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽2.png.meta": {
-    "time": 1646718543096.455
+    "time": 1646721408908.131
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/오른족벽3.png.meta": {
-    "time": 1646718543176.6858
+    "time": 1646721408989.049
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문2.png.meta": {
-    "time": 1646718543272.702
+    "time": 1646721409001.4712
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/창문3.png.meta": {
-    "time": 1646718543276.9915
+    "time": 1646721409000.983
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫2.png.meta": {
-    "time": 1646718543284.7847
+    "time": 1646721409050.8882
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫1.png.meta": {
-    "time": 1646718543278.3633
+    "time": 1646721409018.4497
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫3.png.meta": {
-    "time": 1646718543297.967
+    "time": 1646721409058.697
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블1.png.meta": {
-    "time": 1646718543313.6777
+    "time": 1646721409055.7832
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블2.png.meta": {
-    "time": 1646718543314.6287
+    "time": 1646721409052.9866
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/카펫테이블3.png.meta": {
-    "time": 1646718543312.4673
+    "time": 1646721409072.9521
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자1.png.meta": {
-    "time": 1646718543316.2466
+    "time": 1646721409096.8752
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자3.png.meta": {
-    "time": 1646718543332.4705
+    "time": 1646721409102.5972
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/탁자2.png.meta": {
-    "time": 1646718543342.0918
+    "time": 1646721409102.9294
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀바닥.png.meta": {
-    "time": 1646718543349.6567
+    "time": 1646721409109.0505
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀벽.png.meta": {
-    "time": 1646718543350.7
+    "time": 1646721409115.9287
   }
 }
