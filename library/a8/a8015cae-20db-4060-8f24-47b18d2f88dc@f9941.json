@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tv장1",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 318,
+      "height": 165
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 320,
+      "height": 167
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "a8015cae-20db-4060-8f24-47b18d2f88dc@6c48a",
+    "packable": true
+  }
+}

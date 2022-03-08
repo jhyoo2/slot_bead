@@ -1,0 +1,74 @@
+{
+  "path": {
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Texture/Slot/candy.plist": [
+      "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Texture/Slot/candy.png"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/Spine/Tool.json": [
+      "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/Spine/Tool.atlas.txt"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Texture/Slot/candy.plist": [
+      "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Texture/Slot/candy.png"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/Spine/Tool.json": [
+      "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/Spine/Tool.atlas.txt"
+    ],
+    "C:\\Users\\ho5ngjee\\Desktop\\david\\projects\\cocos_creator\\slot_temp1\\slot_temp1\\assets\\resources\\Texture\\Slot\\candy.plist": [
+      "C:\\Users\\ho5ngjee\\Desktop\\david\\projects\\cocos_creator\\slot_temp1\\slot_temp1\\assets\\resources\\Texture\\Slot\\candy.png"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.plist": [
+      "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/candy.png"
+    ]
+  },
+  "uuid": {
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/Spine/Tool.json": [
+      "5652b781-e09d-4150-90e2-f825432ffc8d@6c48a",
+      "044cc966-14e9-4fa7-b1e9-e4a39146f0ed@6c48a",
+      "4b95691e-ea23-40da-bd77-2838fd176b23@6c48a"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Construction-001.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Construction.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Dust.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Dust01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Fan.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_HouseDust.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_deco/assets/resources/Fx/material/Fx_Sunshine.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/Spine/Tool.json": [
+      "044cc966-14e9-4fa7-b1e9-e4a39146f0ed@6c48a"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Construction-001.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Construction.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Dust.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Dust01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Fan.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_HouseDust.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "/Users/david/Desktop/David/cocos/slot_temp1/assets/resources/Fx/material/Fx_Sunshine.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ]
+  }
+}

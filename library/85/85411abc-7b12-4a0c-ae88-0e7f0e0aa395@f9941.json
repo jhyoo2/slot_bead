@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "방석1",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 174,
+      "height": 73
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 176,
+      "height": 75
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "85411abc-7b12-4a0c-ae88-0e7f0e0aa395@6c48a",
+    "packable": true
+  }
+}

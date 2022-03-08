@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "Tool.atlas",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "\nTool.png\nsize: 374, 362\nformat: RGBA8888\nfilter: Linear, Linear\nrepeat: none\nHammer\n  rotate: true\n  xy: 2, 2\n  size: 248, 330\n  orig: 248, 330\n  offset: 0, 0\n  index: -1\nSaw\n  rotate: false\n  xy: 2, 252\n  size: 370, 108\n  orig: 370, 108\n  offset: 0, 0\n  index: -1\n"
+}

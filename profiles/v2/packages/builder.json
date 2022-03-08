@@ -1,0 +1,72 @@
+{
+  "__version__": "1.2.9",
+  "log": {
+    "level": 4
+  },
+  "common": {
+    "startScene": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+    "outputName": "web-mobile",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "web-mobile",
+    "debug": true,
+    "replaceSplashScreen": false
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1638244222623": {
+        "id": "1638244222623",
+        "progress": 1,
+        "state": "success",
+        "message": "2021. 11. 30. 12:50 Build success in 17804 ms!",
+        "options": {
+          "name": "slot_deco",
+          "platform": "web-mobile",
+          "buildPath": "project://build",
+          "debug": true,
+          "md5Cache": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+          "scenes": [
+            {
+              "url": "db://assets/scenes/DiceScene.scene",
+              "uuid": "c4474a7f-92f3-4c1b-b074-701fcc5608ea",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/MainScene.scene",
+              "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/SlotScene.scene",
+              "uuid": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+              "inBundle": false
+            }
+          ],
+          "outputName": "web-mobile",
+          "packages": {
+            "web-mobile": {
+              "orientation": "auto",
+              "polyfills": {
+                "asyncFunctions": true
+              }
+            },
+            "cocos-service": {
+              "configID": "8f87e1",
+              "services": []
+            }
+          }
+        },
+        "time": "2021. 11. 30. 12:50",
+        "dirty": false
+      }
+    }
+  }
+}

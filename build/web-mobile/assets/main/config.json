@@ -1,0 +1,68 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "main",
+    "deps": [
+        "resources"
+    ],
+    "uuids": [
+        "04c2d8d03",
+        "0a6a6b986",
+        "0f1681344",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@6c48a",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "2d2f792f-a40c-49bb-a189-ed176a246e49",
+        "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@6c48a",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "951249e0-9f16-456d-8b85-a6ca954da16b",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@6c48a",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "a8027877-d8d6-4645-97a0-52d4a0123dba@f9941",
+        "c4474a7f-92f3-4c1b-b074-701fcc5608ea",
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8",
+        "fda095cb-831d-4601-ad94-846013963de8"
+    ],
+    "paths": {
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8": [
+            "db:/internal/default_renderpipeline/builtin-forward",
+            "cc.RenderPipeline"
+        ]
+    },
+    "scenes": {
+        "db://assets/scenes/SlotScene.scene": "2d2f792f-a40c-49bb-a189-ed176a246e49",
+        "db://assets/scenes/MainScene.scene": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
+        "db://assets/scenes/DiceScene.scene": "c4474a7f-92f3-4c1b-b074-701fcc5608ea"
+    },
+    "packs": {
+        "04c2d8d03": [
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8",
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e",
+            "951249e0-9f16-456d-8b85-a6ca954da16b"
+        ],
+        "0f1681344": [
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+            "951249e0-9f16-456d-8b85-a6ca954da16b@f9941"
+        ],
+        "0a6a6b986": [
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@6c48a",
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e@6c48a",
+            "951249e0-9f16-456d-8b85-a6ca954da16b@6c48a"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [
+        "a8027877-d8d6-4645-97a0-52d4a0123dba@f9941",
+        "0",
+        "fda095cb-831d-4601-ad94-846013963de8",
+        "0"
+    ],
+    "debug": true,
+    "extensionMap": {}
+}

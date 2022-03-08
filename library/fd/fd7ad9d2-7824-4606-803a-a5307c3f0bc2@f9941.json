@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tv장3",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 340,
+      "height": 168
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 342,
+      "height": 170
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "fd7ad9d2-7824-4606-803a-a5307c3f0bc2@6c48a",
+    "packable": true
+  }
+}

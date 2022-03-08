@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "쇼파2",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 264,
+      "height": 213
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 266,
+      "height": 215
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "9b967b2a-7620-42fa-b224-953ac61c4410@6c48a",
+    "packable": true
+  }
+}

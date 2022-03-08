@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "창문2",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 214,
+      "height": 281
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 216,
+      "height": 283
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "6a26398d-0bf8-4a2f-b9e0-11689fa63cdb@6c48a",
+    "packable": true
+  }
+}

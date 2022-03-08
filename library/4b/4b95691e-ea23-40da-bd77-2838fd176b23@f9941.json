@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tool",
+    "atlas": "",
+    "rect": {
+      "x": 2,
+      "y": 2,
+      "width": 370,
+      "height": 358
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 374,
+      "height": 362
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "4b95691e-ea23-40da-bd77-2838fd176b23@6c48a",
+    "packable": true
+  }
+}

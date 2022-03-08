@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Saw",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 370,
+      "height": 108
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 370,
+      "height": 108
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "2733b7e9-5f83-4290-b6d9-fd54911b61e4@6c48a",
+    "packable": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "candy_3_0",
+    "atlas": "",
+    "rect": {
+      "x": 13,
+      "y": 9,
+      "width": 54,
+      "height": 63
+    },
+    "offset": {
+      "x": 0,
+      "y": -0.5
+    },
+    "originalSize": {
+      "width": 80,
+      "height": 80
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "e93f209d-5cb1-4595-b685-647bbd277fb7@6c48a",
+    "packable": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "options": {
+    "web-desktop": {
+      "configID": "8f87e1",
+      "services": []
+    },
+    "web-mobile": {
+      "configID": "8f87e1",
+      "services": []
+    }
+  },
+  "builder-options": {
+    "configID": "8f87e1",
+    "services": []
+  }
+}

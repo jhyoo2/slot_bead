@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bead_3",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 2,
+      "width": 281,
+      "height": 278
+    },
+    "offset": {
+      "x": -3.5,
+      "y": -0.5
+    },
+    "originalSize": {
+      "width": 288,
+      "height": 281
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "329d191a-36a8-4d01-a89f-639e6d68dc83@6c48a",
+    "packable": true
+  }
+}

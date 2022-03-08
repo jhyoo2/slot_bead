@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Mart",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 842,
+      "height": 605
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 842,
+      "height": 605
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "6184e359-1c9e-4189-8fd4-7b994eadd280@6c48a",
+    "packable": true
+  }
+}

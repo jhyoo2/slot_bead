@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wild_1_1",
+    "atlas": "",
+    "rect": {
+      "x": 5,
+      "y": 7,
+      "width": 70,
+      "height": 67
+    },
+    "offset": {
+      "x": 0,
+      "y": -0.5
+    },
+    "originalSize": {
+      "width": 80,
+      "height": 80
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "663b534e-ff24-400f-bfa6-51d0e04e737e@6c48a",
+    "packable": true
+  }
+}
