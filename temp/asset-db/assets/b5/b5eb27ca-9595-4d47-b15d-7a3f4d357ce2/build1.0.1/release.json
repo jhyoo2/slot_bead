@@ -1,0 +1,53 @@
+[
+    1,
+    0,
+    0,
+    [
+        "cc.SpriteAtlas"
+    ],
+    0,
+    [
+        {
+            "name": "candy",
+            "spriteFrames": [
+                "back",
+                "b56yfKlZVNR7Fdej9NNXzi@40c10",
+                "candy_1_0",
+                "b56yfKlZVNR7Fdej9NNXzi@0c2c7",
+                "candy_1_1",
+                "b56yfKlZVNR7Fdej9NNXzi@c23d5",
+                "candy_2_0",
+                "b56yfKlZVNR7Fdej9NNXzi@4fb19",
+                "candy_2_1",
+                "b56yfKlZVNR7Fdej9NNXzi@f67b8",
+                "candy_3_0",
+                "b56yfKlZVNR7Fdej9NNXzi@91b5f",
+                "candy_3_1",
+                "b56yfKlZVNR7Fdej9NNXzi@8494a",
+                "candy_4_0",
+                "b56yfKlZVNR7Fdej9NNXzi@54768",
+                "candy_4_1",
+                "b56yfKlZVNR7Fdej9NNXzi@d15cb",
+                "candy_5_0",
+                "b56yfKlZVNR7Fdej9NNXzi@de164",
+                "candy_5_1",
+                "b56yfKlZVNR7Fdej9NNXzi@7d2bd",
+                "candy_6_0",
+                "b56yfKlZVNR7Fdej9NNXzi@040ca",
+                "candy_6_1",
+                "b56yfKlZVNR7Fdej9NNXzi@6d397",
+                "wild_1_0",
+                "b56yfKlZVNR7Fdej9NNXzi@3f682",
+                "wild_1_1",
+                "b56yfKlZVNR7Fdej9NNXzi@1514c"
+            ]
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [],
+    [],
+    []
+]

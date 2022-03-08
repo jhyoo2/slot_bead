@@ -27,6 +27,7 @@ import BaseRoom from "../Prefabs/Room/BaseRoom";
 
 @ccclass("BeadNode")
 export class BeadNode extends BaseScene {
+  beadStart = true;
   myForce = 0;
   myColor = 0;
 
@@ -54,6 +55,10 @@ export class BeadNode extends BaseScene {
     otherCollider: Collider2D,
     contact: IPhysics2DContact | null
   ) {
+    if (this.beadStart) {
+      const myColor = Math.floor(Math.random() * 5) + 1;
+      this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+    }
     if (otherCollider.node.getComponent(BeadNode)) {
       const myRigid = this.node.getComponent(RigidBody2D);
       myRigid.linearVelocity = new Vec2(
@@ -66,8 +71,8 @@ export class BeadNode extends BaseScene {
   addRandomForce() {
     const bidRigid = this.node.getComponent(RigidBody2D);
     const myForce = new Vec2(
-      -20000 + 40000 * Math.random(),
-      70000 + 10000 * Math.random()
+      -40000 + 80000 * Math.random(),
+      90000 + 30000 * Math.random()
     );
     bidRigid.applyForce(
       myForce,
@@ -89,6 +94,9 @@ export class BeadNode extends BaseScene {
   }
 
   update(dt) {
+    if (!this.beadStart) {
+      return;
+    }
     const bidRigid = this.node.getComponent(RigidBody2D);
 
     const myForce = Math.sqrt(
@@ -109,18 +117,19 @@ export class BeadNode extends BaseScene {
         bidRigid.linearVelocity = new Vec2(0, 0);
         bidRigid.angularVelocity = 0;
         this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
+        this.beadStart = false;
       } else if (myForce > 10) {
         bidRigid.linearVelocity = new Vec2(
-          preVelo.x * 0.995,
-          preVelo.y * 0.995
+          preVelo.x * 0.9975,
+          preVelo.y * 0.9975
         );
       } else if (myForce > 1) {
         bidRigid.linearVelocity = new Vec2(
-          preVelo.x * 0.975,
-          preVelo.y * 0.975
+          preVelo.x * 0.985,
+          preVelo.y * 0.985
         );
       } else {
-        bidRigid.linearVelocity = new Vec2(preVelo.x * 0.9, preVelo.y * 0.9);
+        bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
       }
       if (myForce <= 3) {
         this.coverNode.getComponent(UIOpacityComponent).opacity =

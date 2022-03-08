@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "6cd56ac1-202c-43b6-a149-a9b0e1acf37a@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "Scr",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 256,
+                "height": 455
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 256,
+                "height": 455
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "8b89e5ac-0fb1-4905-97d8-d549fdf533c5@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "deco_wall_2",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 420,
+                "height": 506
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 420,
+                "height": 506
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

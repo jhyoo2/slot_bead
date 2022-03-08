@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "9c3b8d9b-b879-49ad-b82b-abfb63560277@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "ground_m_2",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 140,
+                "height": 40
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 140,
+                "height": 40
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "1cgRw4uI9D1aahT7p/nyih@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "card",
+            "rect": {
+                "x": 35,
+                "y": 1,
+                "width": 177,
+                "height": 139
+            },
+            "offset": {
+                "x": 1.5,
+                "y": 1.5
+            },
+            "originalSize": {
+                "width": 244,
+                "height": 144
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

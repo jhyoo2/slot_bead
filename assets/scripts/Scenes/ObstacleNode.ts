@@ -26,6 +26,7 @@ const { ccclass, property } = _decorator;
 import BaseScene from "../BaseObject/BaseScene";
 import AssetManager from "../DataManager/AssetManager";
 import BaseRoom from "../Prefabs/Room/BaseRoom";
+import { BeadNode } from "./BeadNode";
 import { PinballScene } from "./PinballScene";
 
 @ccclass("ObstacleNode")
@@ -35,6 +36,9 @@ export class ObstacleNode extends BaseScene {
 
   @property(PinballScene)
   pinballScene: PinballScene = null;
+
+  row = 0;
+  column = 0;
 
   async onLoad() {
     super.onLoad();
@@ -52,23 +56,23 @@ export class ObstacleNode extends BaseScene {
     otherCollider: Collider2D,
     contact: IPhysics2DContact | null
   ) {
-    if (this.pinballScene) {
-      this.pinballScene.addGold(Number(this.myTag) * 10);
+    if (otherCollider.node.getComponent(BeadNode)) {
+      if (this.pinballScene) {
+        this.pinballScene.addGold(Number(this.myTag) * 10);
+      }
+      const myNode = new Node();
+      const myLabel = myNode.addComponent(Label);
+      myLabel.string = "GOLD + " + Number(this.myTag) * 10;
+      this.node.addChild(myNode);
+      myNode.setPosition(new Vec3(0, 100, 0));
+      tween(myNode)
+        .by(0.2, { position: new Vec3(0, 70, 0) })
+        .delay(0.3)
+        .call(() => {
+          myNode.removeFromParent();
+          myNode.destroy();
+        })
+        .start();
     }
-    // will be called once when two colliders begin to contact
-    // console.log("onBeginContact", otherCollider);
-    const myNode = new Node();
-    const myLabel = myNode.addComponent(Label);
-    myLabel.string = "GOLD + " + Number(this.myTag) * 10;
-    this.node.addChild(myNode);
-    myNode.setPosition(new Vec3(0, 100, 0));
-    tween(myNode)
-      .by(0.2, { position: new Vec3(0, 70, 0) })
-      .delay(0.3)
-      .call(() => {
-        myNode.removeFromParent();
-        myNode.destroy();
-      })
-      .start();
   }
 }

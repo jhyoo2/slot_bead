@@ -13,6 +13,13 @@ import {
   Prefab,
   instantiate,
   tween,
+  SpriteAtlas,
+  Sprite,
+  SpriteFrame,
+  UITransform,
+  Size,
+  UIOpacity,
+  ObjectCurve,
 } from "cc";
 const { ccclass, property } = _decorator;
 
@@ -20,16 +27,24 @@ import BaseScene from "../BaseObject/BaseScene";
 import AssetManager from "../DataManager/AssetManager";
 import BaseRoom from "../Prefabs/Room/BaseRoom";
 import { BeadNode } from "./BeadNode";
+import { ObstacleNode } from "./ObstacleNode";
+import { TileNode } from "./TileNode";
 
 @ccclass("PinballScene")
 export class PinballScene extends BaseScene {
   assetManager: AssetManager = null;
 
   @property(Node)
+  tileLayer: Node | null = null;
+
+  @property(Node)
   nodeLayer: Node | null = null;
 
   @property(Prefab)
   beadPrefab: Prefab | null = null;
+
+  @property(Prefab)
+  tilePrefab: Prefab | null = null;
 
   @property(Node)
   beadArray: Node[] = [];
@@ -42,6 +57,7 @@ export class PinballScene extends BaseScene {
   roolStart = false;
   realStart = false;
   coinNum = 0;
+  tileArray = [];
   // -520
 
   async onLoad() {
@@ -60,9 +76,49 @@ export class PinballScene extends BaseScene {
     // const assetResult = await this.assetManager.loadAssets();
 
     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
+    this.makeTile();
+    this.alocateMonster();
   }
+  makeTile() {
+    for (var i = 0; i < 12; i++) {
+      for (var j = 0; j < 8; j++) {
+        const tileNode = instantiate(this.tilePrefab);
+        tileNode.addComponent(UIOpacity).opacity = 50 + 100 * ((i + j) % 2);
+        this.tileLayer.addChild(tileNode);
+        tileNode.getComponent(UITransform).setContentSize(new Size(110, 114));
+        tileNode.setPosition(
+          new Vec3(-440 + 110 * 0.5 + 110 * j, -750 + 114 * 0.5 + 114 * i)
+        );
+        this.tileArray.push(tileNode);
+
+        const tileScript = tileNode.getComponent(TileNode);
+        tileScript.row = i;
+        tileScript.column = j;
+        tileScript.occupied = false;
+      }
+    }
+  }
+  alocateMonster() {
+    for (let i in this.monsterArray) {
+      while (true) {
+        const row = Math.floor(Math.random() * 8) + 3;
+        const column = Math.floor(Math.random() * 8);
+        const idx = row * 8 + column;
+        const tileScript = this.tileArray[idx].getComponent(TileNode);
+        if (tileScript.occupied) {
+          continue;
+        }
+        tileScript.occupied = true;
+        this.monsterArray[i].setPosition(this.tileArray[idx].getPosition());
+        const monsterScript = this.monsterArray[i].getComponent(ObstacleNode);
+        monsterScript.row = row;
+        monsterScript.column = column;
+        break;
+      }
+    }
+  }
+
   rollButtonClicked() {
-    //
     console.log("roll", this.myForce);
     if (this.myForce == 0) {
       this.coinNum = 0;
@@ -77,9 +133,9 @@ export class PinballScene extends BaseScene {
         }
       }
       const vecArray = [
-        new Vec3(-162, -520, 0),
-        new Vec3(0, -420, 0),
-        new Vec3(162, -520, 0),
+        new Vec3(-162, -720, 0),
+        new Vec3(0, -620, 0),
+        new Vec3(162, -720, 0),
       ];
       for (var i = 0; i < 3; i++) {
         const beadNode = instantiate(this.beadPrefab);
@@ -151,28 +207,52 @@ export class PinballScene extends BaseScene {
   moveMonster() {
     for (let i in this.monsterArray) {
       const monster = this.monsterArray[i];
-      const direction = Math.floor(Math.random() * 4);
-      switch (direction) {
-        case 0:
-          tween(monster)
-            .by(0.2, { position: new Vec3(-100, 0, 0) })
-            .start();
-          break;
-        case 1:
-          tween(monster)
-            .by(0.2, { position: new Vec3(100, 0, 0) })
-            .start();
-          break;
-        case 2:
-          tween(monster)
-            .by(0.2, { position: new Vec3(0, -100, 0) })
-            .start();
-          break;
-        case 3:
-          tween(monster)
-            .by(0.2, { position: new Vec3(0, 100, 0) })
-            .start();
-          break;
+      const monsterScript = this.monsterArray[i].getComponent(ObstacleNode);
+      let tryTime = 0;
+      while (tryTime < 100) {
+        tryTime++;
+        const direction = Math.floor(Math.random() * 4);
+        let row = 0;
+        let column = 0;
+        switch (direction) {
+          case 0:
+            row = -1;
+            break;
+          case 1:
+            row = 1;
+            break;
+          case 2:
+            column = -1;
+            break;
+          case 3:
+            column = 1;
+            break;
+        }
+        row += monsterScript.row;
+        if (row < 3 || row >= 11) {
+          continue;
+        }
+        column += monsterScript.column;
+        if (column < 0 || column >= 8) {
+          continue;
+        }
+        const idx = row * 8 + column;
+        // console.log(monsterScript.row, monsterScript.column, row, column, idx);
+        const tileScript = this.tileArray[idx].getComponent(TileNode);
+        if (tileScript.occupied) {
+          continue;
+        }
+        this.tileArray[
+          monsterScript.row * 8 + monsterScript.column
+        ].getComponent(TileNode).occupied = false;
+        tileScript.occupied = true;
+        monsterScript.row = row;
+        monsterScript.column = column;
+        tween(monster)
+          .to(0.2, { position: this.tileArray[idx].getPosition() })
+          .start();
+        tryTime = 0;
+        break;
       }
     }
   }

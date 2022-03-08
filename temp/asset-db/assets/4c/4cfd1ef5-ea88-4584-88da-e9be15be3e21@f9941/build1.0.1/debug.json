@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "4cfd1ef5-ea88-4584-88da-e9be15be3e21@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "wild_1_0",
+            "rect": {
+                "x": 10,
+                "y": 12,
+                "width": 61,
+                "height": 57
+            },
+            "offset": {
+                "x": 0.5,
+                "y": -0.5
+            },
+            "originalSize": {
+                "width": 80,
+                "height": 80
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

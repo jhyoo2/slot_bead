@@ -237,23 +237,6 @@
       "__unresolved_2": "./mods/fs/0/assets/scripts/DataManager/AssetManager.js",
       "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js"
     },
-    "./mods/fs/0/assets/scripts/Scenes/ObstacleNode.js": {
-      "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/Scenes/PinballScene.js",
-      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
-    },
-    "./mods/fs/0/assets/scripts/Scenes/BeadNode.js": {
-      "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js",
-      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
-    },
-    "./mods/fs/0/assets/scripts/Scenes/PinballScene.js": {
-      "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js",
-      "__unresolved_2": "./mods/fs/0/assets/scripts/Scenes/BeadNode.js",
-      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
-    },
     "./mods/cce/internal/x/cc.js": {
       "__unresolved_0": "cce:/internal/x/cc-fu/base",
       "__unresolved_1": "cce:/internal/x/cc-fu/gfx-webgl",
@@ -277,14 +260,32 @@
       "__unresolved_19": "cce:/internal/x/cc-fu/spine",
       "__unresolved_20": "cce:/internal/x/cc-fu/dragon-bones"
     },
+    "./mods/fs/0/assets/scripts/Scenes/TileNode.js": {
+      "cc": "./mods/cce/internal/x/cc.js"
+    },
+    "./mods/fs/0/assets/scripts/Scenes/PinballScene.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
+      "__unresolved_2": "./mods/fs/0/assets/scripts/Scenes/BeadNode.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/Scenes/ObstacleNode.js",
+      "__unresolved_4": "./mods/fs/0/assets/scripts/Scenes/TileNode.js",
+      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js"
+    },
+    "./mods/fs/0/assets/scripts/Scenes/BeadNode.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
+      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js"
+    },
     "./mods/cce/internal/x/prerequisite-imports.js": {
-      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/ModalLayer.js",
       "__unresolved_0": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js",
+      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/ModalLayer.js",
       "__unresolved_2": "./mods/fs/0/assets/scripts/Common/CCUtils.js",
-      "__unresolved_4": "./mods/fs/0/assets/scripts/DataManager/AssetManager.js",
-      "__unresolved_3": "./mods/fs/0/assets/scripts/Common/Module.js",
       "__unresolved_5": "./mods/fs/0/assets/scripts/Helloworld.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/Common/Module.js",
+      "__unresolved_4": "./mods/fs/0/assets/scripts/DataManager/AssetManager.js",
+      "__unresolved_6": "./mods/fs/0/assets/scripts/Prefabs/Deco/DecoAlert.js",
       "__unresolved_8": "./mods/fs/0/assets/scripts/Prefabs/Deco/DecoTypes.js",
+      "__unresolved_7": "./mods/fs/0/assets/scripts/Prefabs/Deco/DecoMaster.js",
       "__unresolved_9": "./mods/fs/0/assets/scripts/Prefabs/Deco/FileList.js",
       "__unresolved_10": "./mods/fs/0/assets/scripts/Prefabs/Deco/FileMaster.js",
       "__unresolved_11": "./mods/fs/0/assets/scripts/Prefabs/Deco/FileTitle.js",
@@ -294,19 +295,25 @@
       "__unresolved_15": "./mods/fs/0/assets/scripts/Prefabs/Dice/DiceIcon.js",
       "__unresolved_16": "./mods/fs/0/assets/scripts/Prefabs/Dice/DiceMaster.js",
       "__unresolved_17": "./mods/fs/0/assets/scripts/Prefabs/DiceManager.js",
+      "__unresolved_19": "./mods/fs/0/assets/scripts/Prefabs/Room/BaseRoom.js",
       "__unresolved_18": "./mods/fs/0/assets/scripts/Prefabs/DiceScene/TileRail.js",
       "__unresolved_20": "./mods/fs/0/assets/scripts/Prefabs/Room/RoomBlock.js",
       "__unresolved_21": "./mods/fs/0/assets/scripts/Prefabs/Room/RoomTemplate.js",
-      "__unresolved_19": "./mods/fs/0/assets/scripts/Prefabs/Room/BaseRoom.js",
       "__unresolved_22": "./mods/fs/0/assets/scripts/Prefabs/Slot/SlotIcon.js",
       "__unresolved_23": "./mods/fs/0/assets/scripts/Prefabs/Slot/SlotLine.js",
       "__unresolved_24": "./mods/fs/0/assets/scripts/Prefabs/Slot/SlotMaster.js",
       "__unresolved_25": "./mods/fs/0/assets/scripts/Prefabs/SlotManager.js",
       "__unresolved_26": "./mods/fs/0/assets/scripts/Scenes/BeadNode.js",
-      "__unresolved_27": "./mods/fs/0/assets/scripts/Scenes/ObstacleNode.js",
       "__unresolved_28": "./mods/fs/0/assets/scripts/Scenes/PinballScene.js",
-      "__unresolved_7": "./mods/fs/0/assets/scripts/Prefabs/Deco/DecoMaster.js",
-      "__unresolved_6": "./mods/fs/0/assets/scripts/Prefabs/Deco/DecoAlert.js"
+      "__unresolved_29": "./mods/fs/0/assets/scripts/Scenes/TileNode.js",
+      "__unresolved_27": "./mods/fs/0/assets/scripts/Scenes/ObstacleNode.js"
+    },
+    "./mods/fs/0/assets/scripts/Scenes/ObstacleNode.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js",
+      "__unresolved_1": "./mods/fs/0/assets/scripts/BaseObject/BaseScene.js",
+      "__unresolved_2": "./mods/fs/0/assets/scripts/Scenes/BeadNode.js",
+      "__unresolved_3": "./mods/fs/0/assets/scripts/Scenes/PinballScene.js"
     }
   }
 }

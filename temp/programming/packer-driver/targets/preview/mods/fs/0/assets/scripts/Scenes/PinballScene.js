@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context2) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context2) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, BaseScene, BeadNode, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _temp, _crd, ccclass, property, PinballScene;
+  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, PinballScene;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -33,6 +33,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("BeadNode", "./BeadNode", _context2.meta, extras);
   }
 
+  function _reportPossibleCrUseOfObstacleNode(extras) {
+    _reporterNs.report("ObstacleNode", "./ObstacleNode", _context2.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfTileNode(extras) {
+    _reporterNs.report("TileNode", "./TileNode", _context2.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -47,10 +55,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Prefab = _cc.Prefab;
       instantiate = _cc.instantiate;
       tween = _cc.tween;
+      UITransform = _cc.UITransform;
+      Size = _cc.Size;
+      UIOpacity = _cc.UIOpacity;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
       BeadNode = _unresolved_3.BeadNode;
+    }, function (_unresolved_4) {
+      ObstacleNode = _unresolved_4.ObstacleNode;
+    }, function (_unresolved_5) {
+      TileNode = _unresolved_5.TileNode;
     }],
     execute: function () {
       _crd = true;
@@ -60,7 +75,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       ccclass = _decorator.ccclass;
       property = _decorator.property;
 
-      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Prefab), _dec4 = property(Node), _dec5 = property(Node), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
+      _export("PinballScene", PinballScene = (_dec = ccclass("PinballScene"), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Prefab), _dec5 = property(Prefab), _dec6 = property(Node), _dec7 = property(Node), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
         _inheritsLoose(PinballScene, _ref);
 
         function PinballScene() {
@@ -74,13 +89,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           _defineProperty(_assertThisInitialized(_this), "assetManager", null);
 
-          _initializerDefineProperty(_assertThisInitialized(_this), "nodeLayer", _descriptor, _assertThisInitialized(_this));
+          _initializerDefineProperty(_assertThisInitialized(_this), "tileLayer", _descriptor, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_assertThisInitialized(_this), "beadPrefab", _descriptor2, _assertThisInitialized(_this));
+          _initializerDefineProperty(_assertThisInitialized(_this), "nodeLayer", _descriptor2, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_assertThisInitialized(_this), "beadArray", _descriptor3, _assertThisInitialized(_this));
+          _initializerDefineProperty(_assertThisInitialized(_this), "beadPrefab", _descriptor3, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_assertThisInitialized(_this), "monsterArray", _descriptor4, _assertThisInitialized(_this));
+          _initializerDefineProperty(_assertThisInitialized(_this), "tilePrefab", _descriptor4, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_assertThisInitialized(_this), "beadArray", _descriptor5, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_assertThisInitialized(_this), "monsterArray", _descriptor6, _assertThisInitialized(_this));
 
           _defineProperty(_assertThisInitialized(_this), "myForce", 0);
 
@@ -91,6 +110,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _defineProperty(_assertThisInitialized(_this), "realStart", false);
 
           _defineProperty(_assertThisInitialized(_this), "coinNum", 0);
+
+          _defineProperty(_assertThisInitialized(_this), "tileArray", []);
 
           return _this;
         }
@@ -120,7 +141,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
                     // const assetResult = await this.assetManager.loadAssets();
                     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
 
-                  case 3:
+                    this.makeTile();
+                    this.alocateMonster();
+
+                  case 5:
                   case "end":
                     return _context.stop();
                 }
@@ -135,8 +159,52 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           return onLoad;
         }();
 
+        _proto.makeTile = function makeTile() {
+          for (var i = 0; i < 12; i++) {
+            for (var j = 0; j < 8; j++) {
+              var tileNode = instantiate(this.tilePrefab);
+              tileNode.addComponent(UIOpacity).opacity = 50 + 100 * ((i + j) % 2);
+              this.tileLayer.addChild(tileNode);
+              tileNode.getComponent(UITransform).setContentSize(new Size(110, 114));
+              tileNode.setPosition(new Vec3(-440 + 110 * 0.5 + 110 * j, -750 + 114 * 0.5 + 114 * i));
+              this.tileArray.push(tileNode);
+              var tileScript = tileNode.getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
+                error: Error()
+              }), TileNode) : TileNode);
+              tileScript.row = i;
+              tileScript.column = j;
+              tileScript.occupied = false;
+            }
+          }
+        };
+
+        _proto.alocateMonster = function alocateMonster() {
+          for (var i in this.monsterArray) {
+            while (true) {
+              var row = Math.floor(Math.random() * 8) + 3;
+              var column = Math.floor(Math.random() * 8);
+              var idx = row * 8 + column;
+              var tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
+                error: Error()
+              }), TileNode) : TileNode);
+
+              if (tileScript.occupied) {
+                continue;
+              }
+
+              tileScript.occupied = true;
+              this.monsterArray[i].setPosition(this.tileArray[idx].getPosition());
+              var monsterScript = this.monsterArray[i].getComponent(_crd && ObstacleNode === void 0 ? (_reportPossibleCrUseOfObstacleNode({
+                error: Error()
+              }), ObstacleNode) : ObstacleNode);
+              monsterScript.row = row;
+              monsterScript.column = column;
+              break;
+            }
+          }
+        };
+
         _proto.rollButtonClicked = function rollButtonClicked() {
-          //
           console.log("roll", this.myForce);
 
           if (this.myForce == 0) {
@@ -153,7 +221,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
               }
             }
 
-            var vecArray = [new Vec3(-162, -520, 0), new Vec3(0, -420, 0), new Vec3(162, -520, 0)];
+            var vecArray = [new Vec3(-162, -720, 0), new Vec3(0, -620, 0), new Vec3(162, -720, 0)];
 
             for (var i = 0; i < 3; i++) {
               var beadNode = instantiate(this.beadPrefab);
@@ -230,32 +298,68 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         _proto.moveMonster = function moveMonster() {
           for (var i in this.monsterArray) {
             var monster = this.monsterArray[i];
-            var direction = Math.floor(Math.random() * 4);
+            var monsterScript = this.monsterArray[i].getComponent(_crd && ObstacleNode === void 0 ? (_reportPossibleCrUseOfObstacleNode({
+              error: Error()
+            }), ObstacleNode) : ObstacleNode);
+            var tryTime = 0;
 
-            switch (direction) {
-              case 0:
-                tween(monster).by(0.2, {
-                  position: new Vec3(-100, 0, 0)
-                }).start();
-                break;
+            while (tryTime < 100) {
+              tryTime++;
+              var direction = Math.floor(Math.random() * 4);
+              var row = 0;
+              var column = 0;
 
-              case 1:
-                tween(monster).by(0.2, {
-                  position: new Vec3(100, 0, 0)
-                }).start();
-                break;
+              switch (direction) {
+                case 0:
+                  row = -1;
+                  break;
 
-              case 2:
-                tween(monster).by(0.2, {
-                  position: new Vec3(0, -100, 0)
-                }).start();
-                break;
+                case 1:
+                  row = 1;
+                  break;
 
-              case 3:
-                tween(monster).by(0.2, {
-                  position: new Vec3(0, 100, 0)
-                }).start();
-                break;
+                case 2:
+                  column = -1;
+                  break;
+
+                case 3:
+                  column = 1;
+                  break;
+              }
+
+              row += monsterScript.row;
+
+              if (row < 3 || row >= 11) {
+                continue;
+              }
+
+              column += monsterScript.column;
+
+              if (column < 0 || column >= 8) {
+                continue;
+              }
+
+              var idx = row * 8 + column; // console.log(monsterScript.row, monsterScript.column, row, column, idx);
+
+              var tileScript = this.tileArray[idx].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
+                error: Error()
+              }), TileNode) : TileNode);
+
+              if (tileScript.occupied) {
+                continue;
+              }
+
+              this.tileArray[monsterScript.row * 8 + monsterScript.column].getComponent(_crd && TileNode === void 0 ? (_reportPossibleCrUseOfTileNode({
+                error: Error()
+              }), TileNode) : TileNode).occupied = false;
+              tileScript.occupied = true;
+              monsterScript.row = row;
+              monsterScript.column = column;
+              tween(monster).to(0.2, {
+                position: this.tileArray[idx].getPosition()
+              }).start();
+              tryTime = 0;
+              break;
             }
           }
         };
@@ -263,28 +367,42 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         return PinballScene;
       }(_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
         error: Error()
-      }), BaseScene) : BaseScene), _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "nodeLayer", [_dec2], {
+      }), BaseScene) : BaseScene), _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "tileLayer", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "beadPrefab", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "nodeLayer", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "beadArray", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "beadPrefab", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "tilePrefab", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "beadArray", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return [];
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "monsterArray", [_dec5], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "monsterArray", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,

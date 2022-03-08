@@ -62,6 +62,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _this = _ref.call.apply(_ref, [this].concat(args)) || this;
 
+          _defineProperty(_assertThisInitialized(_this), "beadStart", true);
+
           _defineProperty(_assertThisInitialized(_this), "myForce", 0);
 
           _defineProperty(_assertThisInitialized(_this), "myColor", 0);
@@ -112,6 +114,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }();
 
         _proto.onBeginContact = function onBeginContact(selfCollider, otherCollider, contact) {
+          if (this.beadStart) {
+            var myColor = Math.floor(Math.random() * 5) + 1;
+            this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+          }
+
           if (otherCollider.node.getComponent(BeadNode)) {
             var myRigid = this.node.getComponent(RigidBody2D);
             myRigid.linearVelocity = new Vec2(Math.max(this.maxVelocity.x, myRigid.linearVelocity.x * 2.2), Math.max(this.maxVelocity.y, myRigid.linearVelocity.y * 2.2));
@@ -120,7 +127,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
         _proto.addRandomForce = function addRandomForce() {
           var bidRigid = this.node.getComponent(RigidBody2D);
-          var myForce = new Vec2(-20000 + 40000 * Math.random(), 70000 + 10000 * Math.random());
+          var myForce = new Vec2(-40000 + 80000 * Math.random(), 90000 + 30000 * Math.random());
           bidRigid.applyForce(myForce, new Vec2(myForce.x / 100, myForce.y / 100), true);
         };
 
@@ -131,6 +138,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         };
 
         _proto.update = function update(dt) {
+          if (!this.beadStart) {
+            return;
+          }
+
           var bidRigid = this.node.getComponent(RigidBody2D);
           var myForce = Math.sqrt(Math.pow(bidRigid.linearVelocity.x, 2) + Math.pow(bidRigid.linearVelocity.y, 2));
 
@@ -148,12 +159,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
               bidRigid.linearVelocity = new Vec2(0, 0);
               bidRigid.angularVelocity = 0;
               this.coverNode.getComponent(UIOpacityComponent).opacity = 0;
+              this.beadStart = false;
             } else if (myForce > 10) {
-              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.995, preVelo.y * 0.995);
+              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.9975, preVelo.y * 0.9975);
             } else if (myForce > 1) {
-              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.975, preVelo.y * 0.975);
+              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.985, preVelo.y * 0.985);
             } else {
-              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.9, preVelo.y * 0.9);
+              bidRigid.linearVelocity = new Vec2(preVelo.x * 0.95, preVelo.y * 0.95);
             }
 
             if (myForce <= 3) {

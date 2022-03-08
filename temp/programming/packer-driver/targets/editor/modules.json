@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 20199.72962498665,
+    "mTimestamp": 4900393.032916993,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -797,6 +797,20 @@
             "column": 3108
           }
         }
+      },
+      {
+        "value": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts",
+        "rewritten": "__unresolved_29",
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 3124
+          },
+          "end": {
+            "line": 5,
+            "column": 3209
+          }
+        }
       }
     ],
     "modLoMetadata": {
@@ -918,6 +932,10 @@
       {
         "isExternal": false,
         "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts"
       }
     ]
   },
@@ -8887,7 +8905,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "mTimestamp": 1646651496023.1362,
+    "mTimestamp": 1646705676178.8875,
     "chunkId": "assets/scripts/Scenes/BeadNode.js",
     "imports": [
       {
@@ -8948,7 +8966,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts": {
-    "mTimestamp": 1646651496023.706,
+    "mTimestamp": 1646706208758.4075,
     "chunkId": "assets/scripts/Scenes/ObstacleNode.js",
     "imports": [
       {
@@ -8986,15 +9004,29 @@
         }
       },
       {
-        "value": "./PinballScene",
+        "value": "./BeadNode",
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
             "line": 29,
-            "column": 29
+            "column": 25
           },
           "end": {
             "line": 29,
+            "column": 37
+          }
+        }
+      },
+      {
+        "value": "./PinballScene",
+        "rewritten": "__unresolved_3",
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 29
+          },
+          "end": {
+            "line": 30,
             "column": 45
           }
         }
@@ -9019,6 +9051,10 @@
       {
         "isExternal": false,
         "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/BaseObject/BaseScene.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts"
       },
       {
         "isExternal": false,
@@ -9088,7 +9124,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "mTimestamp": 1646652484766.6736,
+    "mTimestamp": 1646705528378.7654,
     "chunkId": "assets/scripts/Scenes/PinballScene.js",
     "imports": [
       {
@@ -9102,11 +9138,11 @@
         "value": "cc",
         "loc": {
           "start": {
-            "line": 16,
+            "line": 23,
             "column": 7
           },
           "end": {
-            "line": 16,
+            "line": 23,
             "column": 11
           }
         }
@@ -9116,11 +9152,11 @@
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
-            "line": 19,
+            "line": 26,
             "column": 22
           },
           "end": {
-            "line": 19,
+            "line": 26,
             "column": 47
           }
         }
@@ -9130,11 +9166,39 @@
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
-            "line": 22,
+            "line": 29,
             "column": 25
           },
           "end": {
-            "line": 22,
+            "line": 29,
+            "column": 37
+          }
+        }
+      },
+      {
+        "value": "./ObstacleNode",
+        "rewritten": "__unresolved_3",
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 29
+          },
+          "end": {
+            "line": 30,
+            "column": 45
+          }
+        }
+      },
+      {
+        "value": "./TileNode",
+        "rewritten": "__unresolved_4",
+        "loc": {
+          "start": {
+            "line": 31,
+            "column": 25
+          },
+          "end": {
+            "line": 31,
             "column": 37
           }
         }
@@ -9163,6 +9227,49 @@
       {
         "isExternal": false,
         "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts"
+      }
+    ]
+  },
+  "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts": {
+    "mTimestamp": 1646703712256.044,
+    "chunkId": "assets/scripts/Scenes/TileNode.js",
+    "imports": [
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 44
+          },
+          "end": {
+            "line": 1,
+            "column": 48
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
       }
     ]
   }

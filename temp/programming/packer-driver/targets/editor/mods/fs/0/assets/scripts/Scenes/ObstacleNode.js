@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, Vec3, Collider2D, Contact2DType, Label, tween, BaseScene, PinballScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, ObstacleNode;
+  var _reporterNs, _cclegacy, _decorator, Node, Vec3, Collider2D, Contact2DType, Label, tween, BaseScene, BeadNode, PinballScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, ObstacleNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -13,6 +13,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
   function _reportPossibleCrUseOfBaseScene(extras) {
     _reporterNs.report("BaseScene", "../BaseObject/BaseScene", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfBeadNode(extras) {
+    _reporterNs.report("BeadNode", "./BeadNode", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfPinballScene(extras) {
@@ -34,7 +38,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
-      PinballScene = _unresolved_3.PinballScene;
+      BeadNode = _unresolved_3.BeadNode;
+    }, function (_unresolved_4) {
+      PinballScene = _unresolved_4.PinballScene;
     }],
     execute: function () {
       _crd = true;
@@ -57,6 +63,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "myTag", _descriptor, this);
 
           _initializerDefineProperty(this, "pinballScene", _descriptor2, this);
+
+          _defineProperty(this, "row", 0);
+
+          _defineProperty(this, "column", 0);
         }
 
         async onLoad() {
@@ -71,23 +81,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }
 
         onBeginContact(selfCollider, otherCollider, contact) {
-          if (this.pinballScene) {
-            this.pinballScene.addGold(Number(this.myTag) * 10);
-          } // will be called once when two colliders begin to contact
-          // console.log("onBeginContact", otherCollider);
+          if (otherCollider.node.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+            error: Error()
+          }), BeadNode) : BeadNode)) {
+            if (this.pinballScene) {
+              this.pinballScene.addGold(Number(this.myTag) * 10);
+            }
 
-
-          const myNode = new Node();
-          const myLabel = myNode.addComponent(Label);
-          myLabel.string = "GOLD + " + Number(this.myTag) * 10;
-          this.node.addChild(myNode);
-          myNode.setPosition(new Vec3(0, 100, 0));
-          tween(myNode).by(0.2, {
-            position: new Vec3(0, 70, 0)
-          }).delay(0.3).call(() => {
-            myNode.removeFromParent();
-            myNode.destroy();
-          }).start();
+            const myNode = new Node();
+            const myLabel = myNode.addComponent(Label);
+            myLabel.string = "GOLD + " + Number(this.myTag) * 10;
+            this.node.addChild(myNode);
+            myNode.setPosition(new Vec3(0, 100, 0));
+            tween(myNode).by(0.2, {
+              position: new Vec3(0, 70, 0)
+            }).delay(0.3).call(() => {
+              myNode.removeFromParent();
+              myNode.destroy();
+            }).start();
+          }
         }
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "myTag", [_dec2], {

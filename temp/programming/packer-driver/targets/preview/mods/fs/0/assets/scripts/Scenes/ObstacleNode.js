@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context2) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context2) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, Vec3, Collider2D, Contact2DType, Label, tween, BaseScene, PinballScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, ObstacleNode;
+  var _reporterNs, _cclegacy, _decorator, Node, Vec3, Collider2D, Contact2DType, Label, tween, BaseScene, BeadNode, PinballScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, ObstacleNode;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -25,6 +25,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("BaseScene", "../BaseObject/BaseScene", _context2.meta, extras);
   }
 
+  function _reportPossibleCrUseOfBeadNode(extras) {
+    _reporterNs.report("BeadNode", "./BeadNode", _context2.meta, extras);
+  }
+
   function _reportPossibleCrUseOfPinballScene(extras) {
     _reporterNs.report("PinballScene", "./PinballScene", _context2.meta, extras);
   }
@@ -44,7 +48,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
-      PinballScene = _unresolved_3.PinballScene;
+      BeadNode = _unresolved_3.BeadNode;
+    }, function (_unresolved_4) {
+      PinballScene = _unresolved_4.PinballScene;
     }],
     execute: function () {
       _crd = true;
@@ -71,6 +77,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(_assertThisInitialized(_this), "myTag", _descriptor, _assertThisInitialized(_this));
 
           _initializerDefineProperty(_assertThisInitialized(_this), "pinballScene", _descriptor2, _assertThisInitialized(_this));
+
+          _defineProperty(_assertThisInitialized(_this), "row", 0);
+
+          _defineProperty(_assertThisInitialized(_this), "column", 0);
 
           return _this;
         }
@@ -110,23 +120,25 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
         }();
 
         _proto.onBeginContact = function onBeginContact(selfCollider, otherCollider, contact) {
-          if (this.pinballScene) {
-            this.pinballScene.addGold(Number(this.myTag) * 10);
-          } // will be called once when two colliders begin to contact
-          // console.log("onBeginContact", otherCollider);
+          if (otherCollider.node.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
+            error: Error()
+          }), BeadNode) : BeadNode)) {
+            if (this.pinballScene) {
+              this.pinballScene.addGold(Number(this.myTag) * 10);
+            }
 
-
-          var myNode = new Node();
-          var myLabel = myNode.addComponent(Label);
-          myLabel.string = "GOLD + " + Number(this.myTag) * 10;
-          this.node.addChild(myNode);
-          myNode.setPosition(new Vec3(0, 100, 0));
-          tween(myNode).by(0.2, {
-            position: new Vec3(0, 70, 0)
-          }).delay(0.3).call(function () {
-            myNode.removeFromParent();
-            myNode.destroy();
-          }).start();
+            var myNode = new Node();
+            var myLabel = myNode.addComponent(Label);
+            myLabel.string = "GOLD + " + Number(this.myTag) * 10;
+            this.node.addChild(myNode);
+            myNode.setPosition(new Vec3(0, 100, 0));
+            tween(myNode).by(0.2, {
+              position: new Vec3(0, 70, 0)
+            }).delay(0.3).call(function () {
+              myNode.removeFromParent();
+              myNode.destroy();
+            }).start();
+          }
         };
 
         return ObstacleNode;

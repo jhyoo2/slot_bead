@@ -6687,7 +6687,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab": {
-    "time": 1646651461597.34,
+    "time": 1646703599613.476,
     "uuid": "bf72d192-8f23-4d32-9f6c-59963dceff4e",
     "missing": false
   },
@@ -6697,7 +6697,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646652488536.8154,
+    "time": 1646705529420.2417,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
@@ -6727,12 +6727,12 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes": {
-    "time": 1646651461728.2349,
+    "time": 1646703693789.4336,
     "uuid": "c5195d45-509c-4dfc-8779-2b19bb6bfd7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646651495923.0542,
+    "time": 1646706210238.6208,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
@@ -6857,17 +6857,17 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646651496023.1362,
+    "time": 1646705676178.8875,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts": {
-    "time": 1646651496023.706,
+    "time": 1646706208758.4075,
     "uuid": "5c786c8a-3c37-4049-9798-7523e83e8d9d",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646652484766.6736,
+    "time": 1646705528378.7654,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
@@ -8230,5 +8230,21 @@
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Slot/wild_1_1.png.meta": {
     "time": 1646651496006.8115
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/TilePrefab.prefab.meta": {
+    "time": 1646703599623.3608
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/TilePrefab.prefab": {
+    "time": 1646703771207.472,
+    "uuid": "2d0c94d1-1fde-4aec-b9ec-8f375607205e",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts.meta": {
+    "time": 1646703693791.767
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/TileNode.ts": {
+    "time": 1646703712256.044,
+    "uuid": "b5cc30e5-c86e-48db-976d-47e16629d45d",
+    "missing": false
   }
 }

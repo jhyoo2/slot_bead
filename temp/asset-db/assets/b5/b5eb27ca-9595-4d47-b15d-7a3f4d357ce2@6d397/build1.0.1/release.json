@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "548EzIIUFLR5UCM5mb+7Gz@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "candy_6_1",
+            "rect": {
+                "x": 1,
+                "y": 83,
+                "width": 72,
+                "height": 70
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 80,
+                "height": 80
+            },
+            "rotated": true,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]
