@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, Vec2, RigidBody2D, SpriteFrame, Sprite, UIOpacityComponent, Collider2D, Contact2DType, BaseScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BeadNode;
+  var _reporterNs, _cclegacy, _decorator, Node, Vec2, Vec3, RigidBody2D, SpriteFrame, Sprite, UIOpacityComponent, Collider2D, Contact2DType, tween, BaseScene, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _temp, _crd, ccclass, property, BeadNode;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -23,12 +23,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       _decorator = _cc._decorator;
       Node = _cc.Node;
       Vec2 = _cc.Vec2;
+      Vec3 = _cc.Vec3;
       RigidBody2D = _cc.RigidBody2D;
       SpriteFrame = _cc.SpriteFrame;
       Sprite = _cc.Sprite;
       UIOpacityComponent = _cc.UIOpacityComponent;
       Collider2D = _cc.Collider2D;
       Contact2DType = _cc.Contact2DType;
+      tween = _cc.tween;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }],
@@ -42,7 +44,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         property
       } = _decorator);
 
-      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Node), _dec3 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = class BeadNode extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
+      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Node), _dec3 = property(SpriteFrame), _dec4 = property(Node), _dec5 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = class BeadNode extends (_crd && BaseScene === void 0 ? (_reportPossibleCrUseOfBaseScene({
         error: Error()
       }), BaseScene) : BaseScene) {
         constructor(...args) {
@@ -60,7 +62,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _initializerDefineProperty(this, "beadFrame", _descriptor2, this);
 
+          _initializerDefineProperty(this, "shapeNode", _descriptor3, this);
+
+          _initializerDefineProperty(this, "shapeFrame", _descriptor4, this);
+
           _defineProperty(this, "maxForce", 0);
+
+          _defineProperty(this, "nodeShape", 0);
 
           _defineProperty(this, "maxVelocity", new Vec2(0, 0));
         }
@@ -74,6 +82,52 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           if (collider) {
             collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
           }
+
+          this.changeShape();
+        }
+
+        changeShape() {
+          let myShape = Math.floor(Math.random() * 4);
+          const bidRigid = this.node.getComponent(RigidBody2D);
+          const myForce = Math.sqrt(Math.pow(bidRigid.linearVelocity.x, 2) + Math.pow(bidRigid.linearVelocity.y, 2));
+          let time = 1.0;
+
+          if (myForce > 10) {
+            time = 0.05;
+          } else if (myForce > 5) {
+            time = 0.1;
+          } else if (myForce > 3) {
+            time = 0.3;
+          } else if (myForce > 1) {
+            time = 0.5;
+            myShape = 3;
+          } else {
+            myShape = 3;
+          }
+
+          const copyNode = new Node();
+          const copySprite = copyNode.addComponent(Sprite);
+          copyNode.setScale(new Vec3(2.5, 2.5, 2.5));
+          copySprite.spriteFrame = this.shapeFrame[this.nodeShape];
+          this.shapeNode.parent.addChild(copyNode);
+          this.nodeShape = myShape;
+          this.shapeNode.getComponent(Sprite).spriteFrame = this.shapeFrame[myShape];
+          tween(copyNode).by(time, {
+            position: new Vec3(0, 150, 0)
+          }).call(() => {
+            copyNode.removeFromParent();
+            copyNode.destroy();
+          }).start();
+          this.shapeNode.setPosition(new Vec3(0, -150, 0));
+          tween(this.shapeNode).by(time, {
+            position: new Vec3(0, 150, 0)
+          }).delay(time / 2).call(() => {
+            if (!this.beadStart && this.nodeShape == 3) {
+              return;
+            }
+
+            this.changeShape();
+          }).start();
         }
 
         onBeginContact(selfCollider, otherCollider, contact) {
@@ -149,6 +203,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           return null;
         }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "beadFrame", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "shapeNode", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "shapeFrame", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,

@@ -18,6 +18,7 @@ import {
   Collider2D,
   Contact2DType,
   IPhysics2DContact,
+  tween,
 } from "cc";
 const { ccclass, property } = _decorator;
 
@@ -38,7 +39,14 @@ export class BeadNode extends BaseScene {
   @property(SpriteFrame)
   beadFrame: SpriteFrame[] = [];
 
+  @property(Node)
+  shapeNode: Node | null = null;
+
+  @property(SpriteFrame)
+  shapeFrame: SpriteFrame[] = [];
+
   maxForce = 0;
+  nodeShape = 0;
   maxVelocity = new Vec2(0, 0);
 
   async onLoad() {
@@ -49,6 +57,59 @@ export class BeadNode extends BaseScene {
     if (collider) {
       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
     }
+    this.changeShape();
+  }
+
+  changeShape() {
+    let myShape = Math.floor(Math.random() * 4);
+    const bidRigid = this.node.getComponent(RigidBody2D);
+    const myForce = Math.sqrt(
+      Math.pow(bidRigid.linearVelocity.x, 2) +
+        Math.pow(bidRigid.linearVelocity.y, 2)
+    );
+    let time = 1.0;
+    if (myForce > 10) {
+      time = 0.05;
+    } else if (myForce > 5) {
+      time = 0.1;
+    } else if (myForce > 3) {
+      time = 0.3;
+    } else if (myForce > 1) {
+      time = 0.5;
+      myShape = 3;
+    } else {
+      myShape = 3;
+    }
+
+    const copyNode = new Node();
+    const copySprite = copyNode.addComponent(Sprite);
+    copyNode.setScale(new Vec3(2.5, 2.5, 2.5));
+    copySprite.spriteFrame = this.shapeFrame[this.nodeShape];
+    this.shapeNode.parent.addChild(copyNode);
+
+    this.nodeShape = myShape;
+    this.shapeNode.getComponent(Sprite).spriteFrame = this.shapeFrame[myShape];
+
+    tween(copyNode)
+      .by(time, { position: new Vec3(0, 150, 0) })
+      .call(() => {
+        copyNode.removeFromParent();
+        copyNode.destroy();
+      })
+      .start();
+
+    this.shapeNode.setPosition(new Vec3(0, -150, 0));
+
+    tween(this.shapeNode)
+      .by(time, { position: new Vec3(0, 150, 0) })
+      .delay(time / 2)
+      .call(() => {
+        if (!this.beadStart && this.nodeShape == 3) {
+          return;
+        }
+        this.changeShape();
+      })
+      .start();
   }
 
   onBeginContact(

@@ -6677,7 +6677,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes": {
-    "time": 1646721406259.1104,
+    "time": 1646961588045.1255,
     "uuid": "d9e170af-6cee-46f2-b417-3d7be70d323f",
     "missing": false
   },
@@ -6687,7 +6687,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab": {
-    "time": 1646713725585.717,
+    "time": 1646961588038.8647,
     "uuid": "bf72d192-8f23-4d32-9f6c-59963dceff4e",
     "missing": false
   },
@@ -6697,7 +6697,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646722031728.908,
+    "time": 1646961637243.9053,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
@@ -6727,12 +6727,12 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes": {
-    "time": 1646721406260.1052,
+    "time": 1646961588049.2644,
     "uuid": "c5195d45-509c-4dfc-8779-2b19bb6bfd7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646721782232.6785,
+    "time": 1646964700357.9656,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
@@ -6772,7 +6772,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball": {
-    "time": 1646713725637.792,
+    "time": 1646962953492.1511,
     "uuid": "8f83eaed-ffe8-434f-a7f0-9b6c5845d4dc",
     "missing": false
   },
@@ -6857,7 +6857,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646722029412.8984,
+    "time": 1646963390785.4985,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
@@ -6867,7 +6867,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646721934876.4292,
+    "time": 1646961588049.5332,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
@@ -8558,5 +8558,69 @@
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Deco/틀벽.png.meta": {
     "time": 1646721409115.9287
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_1.png.meta": {
+    "time": 1646961997191.2815
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_2.png.meta": {
+    "time": 1646961997188.8975
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_3.png.meta": {
+    "time": 1646961997191.725
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_4.png.meta": {
+    "time": 1646961997192.0283
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_2.png": {
+    "time": 1646961916886.2146,
+    "uuid": "454b612b-bf77-4065-a197-46f6b6b62357",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_1.png": {
+    "time": 1646961904032.6938,
+    "uuid": "50d8968b-552f-41f9-8363-c6e6447c7e6d",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_3.png": {
+    "time": 1646961928802.8582,
+    "uuid": "e38dacb6-6d35-4197-9659-55e7ee2bc074",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_4.png": {
+    "time": 1646961938450.042,
+    "uuid": "d7192412-a37a-4cb7-a692-706ef5dbde01",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_1.png.meta": {
+    "time": 1646962324147.0344
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_2.png.meta": {
+    "time": 1646962324146.1826
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_3.png.meta": {
+    "time": 1646962324147.747
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_4.png.meta": {
+    "time": 1646962324148.2095
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_2.png": {
+    "time": 1646962953480.6135,
+    "uuid": "a8055aac-ecbc-4ede-9954-1f31ca069848",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_1.png": {
+    "time": 1646962913219.3484,
+    "uuid": "4e2f4a96-8294-4e47-b1c2-0d7ff1dbbdcd",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_3.png": {
+    "time": 1646962930229.1123,
+    "uuid": "c3694eb0-741a-42dd-b725-40d732a1dc2b",
+    "missing": false
+  },
+  "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_4.png": {
+    "time": 1646962942016.7358,
+    "uuid": "952ea6d9-b60d-4eb5-b647-29f529fdca6a",
+    "missing": false
   }
 }

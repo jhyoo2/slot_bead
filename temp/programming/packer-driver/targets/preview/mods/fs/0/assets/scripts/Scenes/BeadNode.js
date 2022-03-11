@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _context2) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, Vec2, RigidBody2D, SpriteFrame, Sprite, UIOpacityComponent, Collider2D, Contact2DType, BaseScene, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, BeadNode;
+  var _reporterNs, _cclegacy, _decorator, Node, Vec2, Vec3, RigidBody2D, SpriteFrame, Sprite, UIOpacityComponent, Collider2D, Contact2DType, tween, BaseScene, _dec, _dec2, _dec3, _dec4, _dec5, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _temp, _crd, ccclass, property, BeadNode;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -33,12 +33,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       _decorator = _cc._decorator;
       Node = _cc.Node;
       Vec2 = _cc.Vec2;
+      Vec3 = _cc.Vec3;
       RigidBody2D = _cc.RigidBody2D;
       SpriteFrame = _cc.SpriteFrame;
       Sprite = _cc.Sprite;
       UIOpacityComponent = _cc.UIOpacityComponent;
       Collider2D = _cc.Collider2D;
       Contact2DType = _cc.Contact2DType;
+      tween = _cc.tween;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }],
@@ -50,7 +52,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       ccclass = _decorator.ccclass;
       property = _decorator.property;
 
-      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Node), _dec3 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
+      _export("BeadNode", BeadNode = (_dec = ccclass("BeadNode"), _dec2 = property(Node), _dec3 = property(SpriteFrame), _dec4 = property(Node), _dec5 = property(SpriteFrame), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_ref) {
         _inheritsLoose(BeadNode, _ref);
 
         function BeadNode() {
@@ -74,7 +76,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           _initializerDefineProperty(_assertThisInitialized(_this), "beadFrame", _descriptor2, _assertThisInitialized(_this));
 
+          _initializerDefineProperty(_assertThisInitialized(_this), "shapeNode", _descriptor3, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_assertThisInitialized(_this), "shapeFrame", _descriptor4, _assertThisInitialized(_this));
+
           _defineProperty(_assertThisInitialized(_this), "maxForce", 0);
+
+          _defineProperty(_assertThisInitialized(_this), "nodeShape", 0);
 
           _defineProperty(_assertThisInitialized(_this), "maxVelocity", new Vec2(0, 0));
 
@@ -100,7 +108,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
                       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
                     }
 
-                  case 5:
+                    this.changeShape();
+
+                  case 6:
                   case "end":
                     return _context.stop();
                 }
@@ -114,6 +124,52 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
           return onLoad;
         }();
+
+        _proto.changeShape = function changeShape() {
+          var _this2 = this;
+
+          var myShape = Math.floor(Math.random() * 4);
+          var bidRigid = this.node.getComponent(RigidBody2D);
+          var myForce = Math.sqrt(Math.pow(bidRigid.linearVelocity.x, 2) + Math.pow(bidRigid.linearVelocity.y, 2));
+          var time = 1.0;
+
+          if (myForce > 10) {
+            time = 0.05;
+          } else if (myForce > 5) {
+            time = 0.1;
+          } else if (myForce > 3) {
+            time = 0.3;
+          } else if (myForce > 1) {
+            time = 0.5;
+            myShape = 3;
+          } else {
+            myShape = 3;
+          }
+
+          var copyNode = new Node();
+          var copySprite = copyNode.addComponent(Sprite);
+          copyNode.setScale(new Vec3(2.5, 2.5, 2.5));
+          copySprite.spriteFrame = this.shapeFrame[this.nodeShape];
+          this.shapeNode.parent.addChild(copyNode);
+          this.nodeShape = myShape;
+          this.shapeNode.getComponent(Sprite).spriteFrame = this.shapeFrame[myShape];
+          tween(copyNode).by(time, {
+            position: new Vec3(0, 150, 0)
+          }).call(function () {
+            copyNode.removeFromParent();
+            copyNode.destroy();
+          }).start();
+          this.shapeNode.setPosition(new Vec3(0, -150, 0));
+          tween(this.shapeNode).by(time, {
+            position: new Vec3(0, 150, 0)
+          }).delay(time / 2).call(function () {
+            if (!_this2.beadStart && _this2.nodeShape == 3) {
+              return;
+            }
+
+            _this2.changeShape();
+          }).start();
+        };
 
         _proto.onBeginContact = function onBeginContact(selfCollider, otherCollider, contact) {
           if (this.beadStart) {
@@ -191,6 +247,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           return null;
         }
       }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "beadFrame", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return [];
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "shapeNode", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "shapeFrame", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
