@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "c0567d12-0d09-4e03-b28c-795f8095adde@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "카펫테이블2",
+            "rect": {
+                "x": 1,
+                "y": 1,
+                "width": 226,
+                "height": 102
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 228,
+                "height": 104
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

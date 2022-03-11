@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4"], function (_export, _context2) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, PinballScene;
+  var _reporterNs, _cclegacy, _decorator, Node, PhysicsSystem2D, Vec2, Vec3, RigidBody2D, Prefab, instantiate, tween, UITransform, Size, UIOpacity, game, BaseScene, BeadNode, ObstacleNode, TileNode, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _temp, _crd, ccclass, property, PinballScene;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -58,6 +58,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       UITransform = _cc.UITransform;
       Size = _cc.Size;
       UIOpacity = _cc.UIOpacity;
+      game = _cc.game;
     }, function (_unresolved_2) {
       BaseScene = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -130,7 +131,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     _ref.prototype.onLoad.call(this);
 
                     PhysicsSystem2D.instance.enable = true;
-                    PhysicsSystem2D.instance.gravity = new Vec2(0, 0); // PhysicsSystem2D.instance.gravity = new Vec2(0, -20 * PHYSICS_2D_PTM_RATIO);
+                    PhysicsSystem2D.instance.gravity = new Vec2(0, 0);
+                    game.frameRate = 60.0;
+                    game.setFrameRate(60.0); // PhysicsSystem2D.instance.gravity = new Vec2(0, -20 * PHYSICS_2D_PTM_RATIO);
                     // PhysicsSystem2D.instance.debugDrawFlags =
                     //   EPhysics2DDrawFlags.Aabb |
                     //   EPhysics2DDrawFlags.Pair |
@@ -141,10 +144,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     // const assetResult = await this.assetManager.loadAssets();
                     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
 
-                    this.makeTile();
-                    this.alocateMonster();
+                    this.makeTile(); // this.alocateMonster();
 
-                  case 5:
+                  case 6:
                   case "end":
                     return _context.stop();
                 }
@@ -230,7 +232,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            var vecArray = [new Vec3(-162, -520, 0), new Vec3(0, -420, 0), new Vec3(162, -520, 0)];
+            var vecArray = [new Vec3(-122, -480, 0), new Vec3(0, -420, 0), new Vec3(122, -480, 0)];
 
             for (var _i = 0; _i < 3; _i++) {
               var beadNode = instantiate(this.beadPrefab);
@@ -276,8 +278,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           if (this.realStart) {
             if (totalForce == 0) {
               this.roolStart = false;
-              this.realStart = false;
-              this.moveMonster();
+              this.realStart = false; // this.moveMonster();
+
               console.log("gold : " + this.coinNum, "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000);
             }
           }
@@ -290,7 +292,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               _myBead.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
-              }), BeadNode) : BeadNode).diminishVelocity(0.95 + 0.005 * Number(i));
+              }), BeadNode) : BeadNode).diminishVelocity(0.95);
             }
           } else if (timeDiff >= 2) {
             for (var i in this.beadArray) {
@@ -298,7 +300,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               _myBead2.getComponent(_crd && BeadNode === void 0 ? (_reportPossibleCrUseOfBeadNode({
                 error: Error()
-              }), BeadNode) : BeadNode).diminishVelocity(0.975 + 0.005 * Number(i));
+              }), BeadNode) : BeadNode).diminishVelocity(0.975);
             }
           }
         };

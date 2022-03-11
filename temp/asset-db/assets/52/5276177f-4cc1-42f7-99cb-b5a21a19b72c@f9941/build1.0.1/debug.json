@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "5276177f-4cc1-42f7-99cb-b5a21a19b72c@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "벽왼쪽2",
+            "rect": {
+                "x": 1,
+                "y": 1,
+                "width": 421,
+                "height": 511
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 423,
+                "height": 513
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

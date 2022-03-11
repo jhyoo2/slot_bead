@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 9980.35787498951,
+    "mTimestamp": 18987526.82108301,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -46,7 +46,7 @@
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/2d",
+        "value": "cce:/internal/x/cc-fu/profiler",
         "rewritten": "__unresolved_3",
         "loc": {
           "start": {
@@ -55,12 +55,12 @@
           },
           "end": {
             "line": 4,
-            "column": 40
+            "column": 46
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/ui",
+        "value": "cce:/internal/x/cc-fu/audio",
         "rewritten": "__unresolved_4",
         "loc": {
           "start": {
@@ -69,12 +69,12 @@
           },
           "end": {
             "line": 5,
-            "column": 40
+            "column": 43
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/particle",
+        "value": "cce:/internal/x/cc-fu/webview",
         "rewritten": "__unresolved_5",
         "loc": {
           "start": {
@@ -83,12 +83,12 @@
           },
           "end": {
             "line": 6,
-            "column": 46
+            "column": 45
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/physics-2d-box2d",
+        "value": "cce:/internal/x/cc-fu/tween",
         "rewritten": "__unresolved_6",
         "loc": {
           "start": {
@@ -97,12 +97,12 @@
           },
           "end": {
             "line": 7,
-            "column": 54
+            "column": 43
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/physics-2d-framework",
+        "value": "cce:/internal/x/cc-fu/particle",
         "rewritten": "__unresolved_7",
         "loc": {
           "start": {
@@ -111,12 +111,12 @@
           },
           "end": {
             "line": 8,
-            "column": 58
+            "column": 46
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/intersection-2d",
+        "value": "cce:/internal/x/cc-fu/2d",
         "rewritten": "__unresolved_8",
         "loc": {
           "start": {
@@ -125,12 +125,12 @@
           },
           "end": {
             "line": 9,
-            "column": 53
+            "column": 40
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/profiler",
+        "value": "cce:/internal/x/cc-fu/ui",
         "rewritten": "__unresolved_9",
         "loc": {
           "start": {
@@ -139,12 +139,12 @@
           },
           "end": {
             "line": 10,
-            "column": 46
+            "column": 40
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/particle-2d",
+        "value": "cce:/internal/x/cc-fu/physics-2d-box2d",
         "rewritten": "__unresolved_10",
         "loc": {
           "start": {
@@ -153,12 +153,12 @@
           },
           "end": {
             "line": 11,
-            "column": 49
+            "column": 54
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/audio",
+        "value": "cce:/internal/x/cc-fu/physics-2d-framework",
         "rewritten": "__unresolved_11",
         "loc": {
           "start": {
@@ -167,12 +167,12 @@
           },
           "end": {
             "line": 12,
-            "column": 43
+            "column": 58
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/video",
+        "value": "cce:/internal/x/cc-fu/intersection-2d",
         "rewritten": "__unresolved_12",
         "loc": {
           "start": {
@@ -181,12 +181,12 @@
           },
           "end": {
             "line": 13,
-            "column": 43
+            "column": 53
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/webview",
+        "value": "cce:/internal/x/cc-fu/particle-2d",
         "rewritten": "__unresolved_13",
         "loc": {
           "start": {
@@ -195,12 +195,12 @@
           },
           "end": {
             "line": 14,
-            "column": 45
+            "column": 49
           }
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/tween",
+        "value": "cce:/internal/x/cc-fu/spine",
         "rewritten": "__unresolved_14",
         "loc": {
           "start": {
@@ -214,7 +214,7 @@
         }
       },
       {
-        "value": "cce:/internal/x/cc-fu/tiled-map",
+        "value": "cce:/internal/x/cc-fu/dragon-bones",
         "rewritten": "__unresolved_15",
         "loc": {
           "start": {
@@ -223,34 +223,6 @@
           },
           "end": {
             "line": 16,
-            "column": 47
-          }
-        }
-      },
-      {
-        "value": "cce:/internal/x/cc-fu/spine",
-        "rewritten": "__unresolved_16",
-        "loc": {
-          "start": {
-            "line": 17,
-            "column": 14
-          },
-          "end": {
-            "line": 17,
-            "column": 43
-          }
-        }
-      },
-      {
-        "value": "cce:/internal/x/cc-fu/dragon-bones",
-        "rewritten": "__unresolved_17",
-        "loc": {
-          "start": {
-            "line": 18,
-            "column": 14
-          },
-          "end": {
-            "line": 18,
             "column": 50
           }
         }
@@ -273,15 +245,31 @@
         "isExternal": true
       },
       {
+        "specifierOrURL": "cce:/internal/x/cc-fu/profiler",
+        "isExternal": true
+      },
+      {
+        "specifierOrURL": "cce:/internal/x/cc-fu/audio",
+        "isExternal": true
+      },
+      {
+        "specifierOrURL": "cce:/internal/x/cc-fu/webview",
+        "isExternal": true
+      },
+      {
+        "specifierOrURL": "cce:/internal/x/cc-fu/tween",
+        "isExternal": true
+      },
+      {
+        "specifierOrURL": "cce:/internal/x/cc-fu/particle",
+        "isExternal": true
+      },
+      {
         "specifierOrURL": "cce:/internal/x/cc-fu/2d",
         "isExternal": true
       },
       {
         "specifierOrURL": "cce:/internal/x/cc-fu/ui",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/particle",
         "isExternal": true
       },
       {
@@ -297,31 +285,7 @@
         "isExternal": true
       },
       {
-        "specifierOrURL": "cce:/internal/x/cc-fu/profiler",
-        "isExternal": true
-      },
-      {
         "specifierOrURL": "cce:/internal/x/cc-fu/particle-2d",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/audio",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/video",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/webview",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/tween",
-        "isExternal": true
-      },
-      {
-        "specifierOrURL": "cce:/internal/x/cc-fu/tiled-map",
         "isExternal": true
       },
       {
@@ -335,7 +299,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 1779372.2058749795,
+    "mTimestamp": 27948890.13920796,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -8746,7 +8710,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "mTimestamp": 1646963390785.4985,
+    "mTimestamp": 1646989560388.014,
     "chunkId": "assets/scripts/Scenes/BeadNode.js",
     "imports": [
       {
@@ -8965,7 +8929,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "mTimestamp": 1646961588049.5332,
+    "mTimestamp": 1646982798017.2646,
     "chunkId": "assets/scripts/Scenes/PinballScene.js",
     "imports": [
       {
@@ -8979,11 +8943,11 @@
         "value": "cc",
         "loc": {
           "start": {
-            "line": 23,
+            "line": 24,
             "column": 7
           },
           "end": {
-            "line": 23,
+            "line": 24,
             "column": 11
           }
         }
@@ -8993,11 +8957,11 @@
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
-            "line": 26,
+            "line": 27,
             "column": 22
           },
           "end": {
-            "line": 26,
+            "line": 27,
             "column": 47
           }
         }
@@ -9007,11 +8971,11 @@
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
-            "line": 29,
+            "line": 30,
             "column": 25
           },
           "end": {
-            "line": 29,
+            "line": 30,
             "column": 37
           }
         }
@@ -9021,11 +8985,11 @@
         "rewritten": "__unresolved_3",
         "loc": {
           "start": {
-            "line": 30,
+            "line": 31,
             "column": 29
           },
           "end": {
-            "line": 30,
+            "line": 31,
             "column": 45
           }
         }
@@ -9035,11 +8999,11 @@
         "rewritten": "__unresolved_4",
         "loc": {
           "start": {
-            "line": 31,
+            "line": 32,
             "column": 25
           },
           "end": {
-            "line": 31,
+            "line": 32,
             "column": 37
           }
         }

@@ -20,6 +20,7 @@ import {
   Size,
   UIOpacity,
   ObjectCurve,
+  game,
 } from "cc";
 const { ccclass, property } = _decorator;
 
@@ -64,6 +65,8 @@ export class PinballScene extends BaseScene {
     super.onLoad();
     PhysicsSystem2D.instance.enable = true;
     PhysicsSystem2D.instance.gravity = new Vec2(0, 0);
+    game.frameRate = 60.0;
+    game.setFrameRate(60.0);
     // PhysicsSystem2D.instance.gravity = new Vec2(0, -20 * PHYSICS_2D_PTM_RATIO);
     // PhysicsSystem2D.instance.debugDrawFlags =
     //   EPhysics2DDrawFlags.Aabb |
@@ -77,7 +80,7 @@ export class PinballScene extends BaseScene {
 
     // this.node.on(Node.EventType.TOUCH_START, this.onTouchStart, this, true);
     this.makeTile();
-    this.alocateMonster();
+    // this.alocateMonster();
   }
   makeTile() {
     for (var i = 0; i < 12; i++) {
@@ -140,9 +143,9 @@ export class PinballScene extends BaseScene {
         }
       }
       const vecArray = [
-        new Vec3(-162, -520, 0),
+        new Vec3(-122, -480, 0),
         new Vec3(0, -420, 0),
-        new Vec3(162, -520, 0),
+        new Vec3(122, -480, 0),
       ];
       for (let i = 0; i < 3; i++) {
         const beadNode = instantiate(this.beadPrefab);
@@ -187,7 +190,7 @@ export class PinballScene extends BaseScene {
       if (totalForce == 0) {
         this.roolStart = false;
         this.realStart = false;
-        this.moveMonster();
+        // this.moveMonster();
         console.log(
           "gold : " + this.coinNum,
           "time : " + (new Date().getTime() - this.myTime.getTime()) / 1000
@@ -199,16 +202,12 @@ export class PinballScene extends BaseScene {
     if (timeDiff >= 3) {
       for (var i in this.beadArray) {
         const myBead = this.beadArray[i];
-        myBead
-          .getComponent(BeadNode)
-          .diminishVelocity(0.95 + 0.005 * Number(i));
+        myBead.getComponent(BeadNode).diminishVelocity(0.95);
       }
     } else if (timeDiff >= 2) {
       for (var i in this.beadArray) {
         const myBead = this.beadArray[i];
-        myBead
-          .getComponent(BeadNode)
-          .diminishVelocity(0.975 + 0.005 * Number(i));
+        myBead.getComponent(BeadNode).diminishVelocity(0.975);
       }
     }
   }

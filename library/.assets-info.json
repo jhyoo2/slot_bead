@@ -6697,7 +6697,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646961637243.9053,
+    "time": 1646990169860.463,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
@@ -6732,7 +6732,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646964700357.9656,
+    "time": 1646990552099.924,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
@@ -6772,7 +6772,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball": {
-    "time": 1646962953492.1511,
+    "time": 1646990167403.2202,
     "uuid": "8f83eaed-ffe8-434f-a7f0-9b6c5845d4dc",
     "missing": false
   },
@@ -6857,7 +6857,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646963390785.4985,
+    "time": 1646989560388.014,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
@@ -6867,7 +6867,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646961588049.5332,
+    "time": 1646982798017.2646,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
@@ -8577,7 +8577,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape_1.png": {
-    "time": 1646961904032.6938,
+    "time": 1646990127981.4648,
     "uuid": "50d8968b-552f-41f9-8363-c6e6447c7e6d",
     "missing": false
   },
@@ -8601,7 +8601,7 @@
     "time": 1646962324147.747
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_4.png.meta": {
-    "time": 1646962324148.2095
+    "time": 1646990170014.1282
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_2.png": {
     "time": 1646962953480.6135,
@@ -8619,7 +8619,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Texture/Pinball/shape2_4.png": {
-    "time": 1646962942016.7358,
+    "time": 1646990167393.3345,
     "uuid": "952ea6d9-b60d-4eb5-b647-29f529fdca6a",
     "missing": false
   }

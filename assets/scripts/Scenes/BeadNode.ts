@@ -31,6 +31,7 @@ export class BeadNode extends BaseScene {
   beadStart = false;
   myForce = 0;
   myColor = 0;
+  targetColor = 3;
   myIdx = 0;
 
   @property(Node)
@@ -53,11 +54,11 @@ export class BeadNode extends BaseScene {
     super.onLoad();
     const myColor = Math.floor(Math.random() * 5) + 1;
     this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+    this.myColor = myColor;
     let collider = this.getComponent(Collider2D);
     if (collider) {
       collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
     }
-    this.changeShape();
   }
 
   changeShape() {
@@ -73,11 +74,19 @@ export class BeadNode extends BaseScene {
     } else if (myForce > 5) {
       time = 0.1;
     } else if (myForce > 3) {
-      time = 0.3;
+      time = 0.2;
     } else if (myForce > 1) {
-      time = 0.5;
+      if (this.nodeShape == this.targetColor) {
+        return;
+      }
+      time = 0.2;
       myShape = 3;
-    } else {
+    } else if (this.beadStart) {
+      if (this.nodeShape == this.targetColor) {
+        return;
+      }
+      console.log("in");
+      time = myForce / 2;
       myShape = 3;
     }
 
@@ -102,9 +111,9 @@ export class BeadNode extends BaseScene {
 
     tween(this.shapeNode)
       .by(time, { position: new Vec3(0, 150, 0) })
-      .delay(time / 2)
+      .delay(time / 5)
       .call(() => {
-        if (!this.beadStart && this.nodeShape == 3) {
+        if (!this.beadStart && this.nodeShape == this.targetColor) {
           return;
         }
         this.changeShape();
@@ -117,24 +126,27 @@ export class BeadNode extends BaseScene {
     otherCollider: Collider2D,
     contact: IPhysics2DContact | null
   ) {
-    if (this.beadStart) {
-      const myColor = Math.floor(Math.random() * 3) + 1;
-      this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
-    }
     if (otherCollider.node.getComponent(BeadNode)) {
       const myRigid = this.node.getComponent(RigidBody2D);
-      // myRigid.linearVelocity = new Vec2(
-      //   Math.max(this.maxVelocity.x, myRigid.linearVelocity.x * 2.2),
-      //   Math.max(this.maxVelocity.y, myRigid.linearVelocity.y * 2.2)
-      // );
+      myRigid.linearVelocity = new Vec2(
+        Math.max(this.maxVelocity.x, myRigid.linearVelocity.x * 2.2),
+        Math.max(this.maxVelocity.y, myRigid.linearVelocity.y * 2.2)
+      );
+    } else {
+      if (this.beadStart) {
+        const myColor = (this.myColor + 1) % 6;
+        this.myColor = myColor;
+        this.node.getComponent(Sprite).spriteFrame = this.beadFrame[myColor];
+      }
     }
   }
 
   addRandomForce() {
+    this.changeShape();
     this.beadStart = true;
     const bidRigid = this.node.getComponent(RigidBody2D);
     const myForce = new Vec2(
-      -40000 + 80000 * Math.random(),
+      -30000 + 60000 * Math.random(),
       90000 + 30000 * Math.random() + 10000 * this.myIdx
     );
     bidRigid.applyForce(
@@ -187,15 +199,19 @@ export class BeadNode extends BaseScene {
           preVelo.y * 0.9975 + 0.001 * this.myIdx
         );
       } else if (myForce > 1) {
-        bidRigid.linearVelocity = new Vec2(
-          preVelo.x * 0.985 + 0.0005 * this.myIdx,
-          preVelo.y * 0.985 + 0.0005 * this.myIdx
-        );
+        if (this.nodeShape == this.targetColor) {
+          bidRigid.linearVelocity = new Vec2(
+            preVelo.x * 0.985 + 0.0005 * this.myIdx,
+            preVelo.y * 0.985 + 0.0005 * this.myIdx
+          );
+        }
       } else {
-        bidRigid.linearVelocity = new Vec2(
-          preVelo.x * 0.95 + 0.001 * this.myIdx,
-          preVelo.y * 0.95 + 0.001 * this.myIdx
-        );
+        if (this.nodeShape == this.targetColor) {
+          bidRigid.linearVelocity = new Vec2(
+            preVelo.x * 0.95 + 0.001 * this.myIdx,
+            preVelo.y * 0.95 + 0.001 * this.myIdx
+          );
+        }
       }
       if (myForce <= 3) {
         this.coverNode.getComponent(UIOpacityComponent).opacity =
