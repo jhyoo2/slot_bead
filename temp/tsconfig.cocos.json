@@ -5,8 +5,8 @@
     "module": "ES2015",
     "strict": true,
     "types": [
-      "./temp/declarations/cc.env",
       "./temp/declarations/jsb",
+      "./temp/declarations/cc.env",
       "./temp/declarations/cc"
     ],
     "paths": {

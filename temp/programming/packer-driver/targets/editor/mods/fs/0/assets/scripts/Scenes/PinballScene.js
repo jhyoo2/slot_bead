@@ -193,7 +193,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
             }
 
-            const myScale = 0.45 * Math.pow(0.95, this.superBet - 1);
+            const myScale = 0.45 * Math.pow(0.95, 10 - 1);
 
             for (let i = 0; i < this.superBet; i++) {
               const beadNode = instantiate(this.beadPrefab);

@@ -6677,7 +6677,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes": {
-    "time": 1646728650666.466,
+    "time": 1646894539660.1172,
     "uuid": "d9e170af-6cee-46f2-b417-3d7be70d323f",
     "missing": false
   },
@@ -6687,7 +6687,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab": {
-    "time": 1646728650665.7974,
+    "time": 1646894539659.759,
     "uuid": "bf72d192-8f23-4d32-9f6c-59963dceff4e",
     "missing": false
   },
@@ -6697,7 +6697,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scenes/MainScene.scene": {
-    "time": 1646731359081.1262,
+    "time": 1646908851487.7131,
     "uuid": "3312edc7-8cd1-4555-8af7-1e5054047b1c",
     "missing": false
   },
@@ -6727,12 +6727,12 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes": {
-    "time": 1646728650667.5393,
+    "time": 1646894539660.936,
     "uuid": "c5195d45-509c-4dfc-8779-2b19bb6bfd7b",
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/resources/Prefab/Bead_1.prefab": {
-    "time": 1646728650666.193,
+    "time": 1646894648250.593,
     "uuid": "6e0b5437-2f56-4114-a4a1-c51d8d05361d",
     "missing": false
   },
@@ -6857,7 +6857,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/BeadNode.ts": {
-    "time": 1646728650667.3792,
+    "time": 1646894539660.851,
     "uuid": "502d9b13-0747-46c9-898c-b8e8d02340fc",
     "missing": false
   },
@@ -6867,7 +6867,7 @@
     "missing": false
   },
   "/Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/PinballScene.ts": {
-    "time": 1646728650667.873,
+    "time": 1646908848130.798,
     "uuid": "857010e4-0f13-4020-8eb7-25141974098c",
     "missing": false
   },
