@@ -85,12 +85,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), BeadNode) : BeadNode)) {
             if (this.pinballScene) {
-              this.pinballScene.addGold(Number(this.myTag) * 10);
+              this.pinballScene.addGold(Number(this.myTag));
             }
 
             const myNode = new Node();
             const myLabel = myNode.addComponent(Label);
-            myLabel.string = "GOLD + " + Number(this.myTag) * 10;
+            myLabel.string = "GOLD + " + Number(this.myTag);
             this.node.addChild(myNode);
             myNode.setPosition(new Vec3(0, 100, 0));
             tween(myNode).by(0.2, {

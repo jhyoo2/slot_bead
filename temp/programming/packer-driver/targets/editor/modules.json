@@ -389,7 +389,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 27948723.00429195,
+    "mTimestamp": 116752399.3685,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -8966,7 +8966,7 @@
     ]
   },
   "file:///Users/david/Desktop/David/cocos/slot_bead/assets/scripts/Scenes/ObstacleNode.ts": {
-    "mTimestamp": 1646713725678.534,
+    "mTimestamp": 1647078034782.3584,
     "chunkId": "assets/scripts/Scenes/ObstacleNode.js",
     "imports": [
       {
@@ -8980,11 +8980,11 @@
         "value": "cc",
         "loc": {
           "start": {
-            "line": 23,
+            "line": 17,
             "column": 7
           },
           "end": {
-            "line": 23,
+            "line": 17,
             "column": 11
           }
         }
@@ -8994,11 +8994,11 @@
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
-            "line": 26,
+            "line": 20,
             "column": 22
           },
           "end": {
-            "line": 26,
+            "line": 20,
             "column": 47
           }
         }
@@ -9008,11 +9008,11 @@
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
-            "line": 29,
+            "line": 23,
             "column": 25
           },
           "end": {
-            "line": 29,
+            "line": 23,
             "column": 37
           }
         }
@@ -9022,11 +9022,11 @@
         "rewritten": "__unresolved_3",
         "loc": {
           "start": {
-            "line": 30,
+            "line": 24,
             "column": 29
           },
           "end": {
-            "line": 30,
+            "line": 24,
             "column": 45
           }
         }

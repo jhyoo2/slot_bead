@@ -5,16 +5,10 @@ import {
   Node,
   PhysicsSystem2D,
   Vec2,
-  PHYSICS_2D_PTM_RATIO,
-  EPhysics2DDrawFlags,
-  RigidBody,
   Vec3,
   RigidBody2D,
   Prefab,
   instantiate,
-  SpriteFrame,
-  Sprite,
-  UIOpacityComponent,
   Collider2D,
   Contact2DType,
   IPhysics2DContact,
@@ -58,11 +52,12 @@ export class ObstacleNode extends BaseScene {
   ) {
     if (otherCollider.node.getComponent(BeadNode)) {
       if (this.pinballScene) {
-        this.pinballScene.addGold(Number(this.myTag) * 10);
+        this.pinballScene.addGold(Number(this.myTag));
       }
+
       const myNode = new Node();
       const myLabel = myNode.addComponent(Label);
-      myLabel.string = "GOLD + " + Number(this.myTag) * 10;
+      myLabel.string = "GOLD + " + Number(this.myTag);
       this.node.addChild(myNode);
       myNode.setPosition(new Vec3(0, 100, 0));
       tween(myNode)

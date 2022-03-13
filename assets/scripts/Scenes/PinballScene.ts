@@ -143,9 +143,9 @@ export class PinballScene extends BaseScene {
         }
       }
       const vecArray = [
-        new Vec3(-122, -480, 0),
-        new Vec3(0, -420, 0),
-        new Vec3(122, -480, 0),
+        new Vec3(-122, -480 + Math.random() * 50, 0),
+        new Vec3(0, -420 + Math.random() * 50, 0),
+        new Vec3(122, -480 + Math.random() * 50, 0),
       ];
       for (let i = 0; i < 3; i++) {
         const beadNode = instantiate(this.beadPrefab);
